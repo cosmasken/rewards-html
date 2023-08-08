@@ -11,24 +11,35 @@
     <link href="./build/output.css" rel="stylesheet">
 </head>
 
-<body class="font-inter bg-white">
+<body class="font-inter bg-white w-full p-0 m-0">
 
-<div class="min-h-screen absolute">
-
-    <section class="relative">
-        <div class="max-h-[957px] max-w-[1642px] overflow-hidden -z-10">
-            <img alt="Linear Gradient" class="hidden sm:block w-full " src="./assets/LandingPage/background.png">
+<div class="min-h-screen min-w-full ">
+    <section class="relative w-full">
+        <div class="absolute top-0 left-0 right-0 overflow-hidden block w-full lg:hidden">
+            <img alt="Linear Gradient" src="./assets/LandingPage/landing-bg-1.png">
         </div>
+    
+        <img alt="Linear Gradient"
+             class="absolute top-0 left-0 right-0 lg:max-h-[1745px] lg:max-w-[2236.5px] overflow-hidden hidden lg:block w-full h-auto"
+             src="./assets/LandingPage/landing-bg-1.png">
 
-        <div class="absolute top-0 left-0 right-0 flex flex-col pl-40 pr-20">
-            <nav class="bg-transparent  relative w-full pb-28">
-                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <!--img alt="Linear Gradient"
+             class="absolute top-0 left-0 right-0  lg:max-h-[1745px] lg:max-w-[2236.5px] overflow-hidden  hidden lg:block w-full "
+             src="./assets/LandingPage/landing-bg-1.png"-->
+
+
+    </section>
+    <section class="relative w-full">
+        <div class="absolute top-0 left-0 right-0 flex flex-col  lg:pl-40 lg:pr-20">
+            <nav class="bg-transparent  relative w-full lg:pb-28">
+                <div class="mx-auto max-w-2xl px-2 lg:px-6 lg:px-8">
                     <div class="relative flex h-16 justify-between">
-                        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
                             <!-- Mobile menu button -->
                             <button aria-controls="mobile-menu"
                                     aria-expanded="false"
-                                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" type="button">
+                                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                    type="button">
                                 <span class="absolute -inset-0.5"></span>
                                 <span class="sr-only">Open main menu</span>
                                 <!--
@@ -52,106 +63,100 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between">
-                            <div class="flex flex-shrink-0 items-center">
-                                <a class="inline-flex items-center  px-1 pt-1 text-3xl font-saira font-bold text-[#EAD7FF]"
-                                   href="#">Rewards
-                                    & Review</a>
-
-
-                            </div>
-                            <div class="hidden sm:ml-6 sm:flex sm:space-x-8 ">
-                                <a class="inline-flex items-center w-[94px]  px-2 py-1  font-bold text-white text-base hover:text-xl "
-                                   href="#">Rewards</a>
-                                <a class="inline-flex items-center w-[94px]  px-1 pt-1  font-bold text-white text-base hover:text-xl "
-                                   href="#">Join
-                                    Us</a>
-                                <a class="inline-flex items-center w-[94px]  px-1 pt-1  font-bold text-white text-base hover:text-xl"
-                                   href="#">Leaderboard</a>
-
-                                <a class="inline-flex items-center w-[94px]   px-1 pt-1  font-bold text-white text-base hover:text-xl "
-                                   href="#">Rules</a>
-
-                                <button class="rounded-md bg-[#0036F533] w-[94px] px-2 py-1   text-center text-base hover:text-xl font-bold text-white shadow-sm ring-1 ring-inset ring-white hover:bg-[#0036F533]"
-                                        type="button">
-                                    <a class=" " href="#">Login</a>
-
-                                </button>
-
-
+                        <div class="hidden lg:block">
+                            <div class="flex flex-1  items-stretch justify-between">
+                                <div class="flex flex-shrink-0 items-center">
+                                    <a class="inline-flex items-center  px-1 pt-1 text-3xl font-saira font-bold text-[#EAD7FF]"
+                                       href="#">Rewards
+                                        & Review</a>
+    
+    
+                                </div>
+                                <div class="  ml-6 flex space-x-8 ">
+                                    <a class="inline-flex items-center  px-2 py-1  font-bold text-white text-base hover:text-lg "
+                                       href="#">Rewards</a>
+                                    <a class="inline-flex items-center   px-1 pt-1  font-bold text-white text-base hover:text-lg "
+                                       href="#">Join
+                                        Us</a>
+                                    <a class="inline-flex items-center   px-1 pt-1  font-bold text-white text-base hover:text-lg"
+                                       href="#">Leaderboard</a>
+    
+                                    <a class="inline-flex items-center    px-1 pt-1  font-bold text-white text-base hover:text-lg "
+                                       href="#">Rules</a>
+    
+                                    <button class="rounded-md bg-[#0036F533]  h-6 px-2 py-1   text-center text-base hover:text-lg font-bold text-white shadow-sm ring-1 ring-inset ring-white hover:bg-[#0036F533]"
+                                            type="button">
+                                        <a class=" " href="#">Login</a>
+    
+                                    </button>
+    
+    
+                                </div>
                             </div>
                         </div>
+                       
 
                     </div>
                 </div>
 
                 <!-- Mobile menu, show/hide based on menu state. -->
-                <div class="sm:hidden" id="mobile-menu">
+                <div class="lg:hidden" id="mobile-menu">
                     <div class="space-y-1 pb-4 pt-2">
                         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
                         <a class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
-                           href="#">Dashboard</a>
+                           href="#">Rewards</a>
                         <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Team</a>
+                           href="#">Join Us</a>
                         <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Projects</a>
+                           href="#">Leaderboard</a>
                         <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Calendar</a>
+                           href="#">Rules</a>
+                           <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                           href="#">Login</a>
                     </div>
                 </div>
             </nav>
 
-            <div class="relative text-4xl text-white pb-5 font-extrabold">
+            <div class="relative lg:text-left text-center lg:text-5xl text-white lg:pb-5 font-extrabold">
                 Share your College Experience
             </div>
+        
 
 
-            <div class="relative max-w-[778px] shadow-lg bg-[#00000026] flex flex-row rounded-md pb-10 ">
+            <div class="text-center justify-center relative  lg:shadow-lg shadow-sm bg-[#00000026]  rounded-md lg:w-[66%] w-[50%]">
 
-                 <input class="absolute block  max-w-[778px]  min-w-[778px]  rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" id="college" name="college"
-                                                    placeholder="Search Your College"
-                                                    type="text">
+
+                <input class="w-full  lg:h-[72px]  rounded-md border-0 py-1.5 pl-10 text-[#272937B2] ring-4 ring-inset ring-[#00000026] placeholder:text-[#272937B2] placeholder:text-xl focus:ring-2 focus:ring-inset focus:ring-[#272937B2] lg:text-sm lg:leading-6"
+                       id="college" name="college"
+                       placeholder="Search Your College"
+                       type="text">
             </div>
 
-            <div class="relative text-2xl text-white pt-5 font-semibold">
+            <div class="relative lg:text-2xl text-xs text-center text-white lg:pt-5 pt-1 font-semibold ">
                 Help millions of students in making informed career decisions.
             </div>
 
 
         </div>
 
-
-    </section>
-
-    <section class="relative">
-
-        <div class="max-h-[871px] max-w-[1440px] overflow-hidden">
-            <img alt="Linear Gradient" class="hidden sm:block w-full " src="./assets/LandingPage/bg-3.png">
-        </div>
-
-        <div class=" relative top-0 left-0 right-0 text-center">
-            <div class="text-2xl text-[#333] mx-auto font-semibold">
+        <div class=" absolute top-[750px] left-0 right-0 text-center">
+            <div class="lg:text-2xl text-base text-[#333] text-center lg:mx-auto font-semibold">
                 How To win
             </div>
-            <div class="flex flex-row justify-center  text-6xl text-[#333] text-center mx-auto font-semibold">
-                Awesome Rewards
-                <img alt="Trophy" height="45px" src="./assets/LandingPage/trophy.svg"/>
+            <div class="flex flex-row justify-center  lg:text-6xl text-base text-[#333] text-center mx-auto font-semibold pb-5">
+                Awesome Rewards?
+                <img alt="Trophy"  class="lg:h-[45px] h-6" src="./assets/LandingPage/trophy.svg"/>
             </div>
-             <div class="text-base text-[#666] font-normal ">
+            <div class="lg:text-base text-center text-xs text-[#666666] font-normal ">
                 The first way is by writing
                 a detailed and factual review of your institution. And the <br/> other is to Join for Campus Ambassador
                 Program
             </div>
 
-            <div class="text-4xl text-[#333] font-semibold pt-[77px] ">
-                Submit Review
-            </div>
+            <div class="flex relative flex-col lg:flex-row w-full bg-[#F8FAFB]">
 
-
-            <div class="flex relative flex-row w-full">
-
-                <div class="basis-1/2 items-center justify-center shrink-0">
-                        <div class="z-10">
+                <div class="lg:basis-1/2 items-center justify-center hidden lg:block lg:shrink-0">
+                    <div class="z-10">
                         <img alt="Rewards Trophy"
 
                              src="./assets/LandingPage/rewards-frame.png"/>
@@ -159,211 +164,1029 @@
 
                 </div>
 
-                <div class="basis-1/2">
-                    <div class="flex flex-row align-top">
+                <div class="lg:basis-1/2 flex-col flex ">
+                    <div class="lg:text-[42px] text-base text-[#333] text-center lg:text-left font-semibold lg:pt-[77px] lg:pb-10">
+                        Submit Review
+                    </div>
+                    <div class="flex flex-col space-y-10">
+                        <div class="flex flex-col lg:flex-row align-top space-x-[26px]">
 
                             <img
-                                    style="align-self: start;"
-                                    src="./assets/LandingPage/review-1.svg " class="hidden self-start sm:block h-[64px] w-[64px]" alt="Write Review"/>
-
-                        <div class="flex flex-col text-left">
-                            <div class="text-xl text-[#333]  text font-semibold">
-                                Write a review
-                            </div>
-                            <div class="text-xl text-[#666]  text font-normal">
-                                Give a detailed and factual review of your institution
-                                & help the future prospects in deciding the right college.
-                                Remember You’re a part of critical decision-making process.
-                                A reviewer, who has attended multiple institutions, can write
-                                a review for all those institutions.
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="flex flex-row">
-
-                            <img style="align-self: start;"
                                     alt="Write Review"
-                                 class="hidden self-start sm:block h-[64px] w-[64px]"
-                                 src="./assets/LandingPage/review-1.svg"/>
-
-                        <div class="flex flex-col text-left">
-                            <div class="text-xl text-[#333]  text font-semibold">
-                                Write a review
+                                    class="hidden self-start lg:block h-[64px] w-[64px]"
+                                    src="./assets/LandingPage/review-1.svg " style="align-self: start;"/>
+    
+                            <div class="flex flex-col text-left">
+                                <div class="text-xl text-[#333]   font-semibold">
+                                    Write a review
+                                </div>
+                                <div class="text-xl text-[#666]   font-normal">
+                                    Give a detailed and factual review of your institution
+                                    & help the future prospects in deciding the right college.
+                                    Remember You’re a part of critical decision-making process.
+                                    A reviewer, who has attended multiple institutions, can write
+                                    a review for all those institutions.
+                                </div>
+    
                             </div>
-                            <div class="text-xl text-[#666]  text font-normal">
-                                Give a detailed and factual review of your institution
-                                & help the future prospects in deciding the right college.
-                                Remember You’re a part of critical decision-making process.
-                                A reviewer, who has attended multiple institutions, can write
-                                a review for all those institutions.
+                        </div>
+                        <div class="flex flex-col lg:flex-row align-top space-x-[26px]">
+    
+                            <img alt="Write Review"
+                                 class="hidden self-start lg:block h-[64px] w-[64px]"
+                                 src="./assets/LandingPage/review-1.svg"
+                                 style="align-self: start;"/>
+    
+                            <div class="flex flex-col text-left">
+                                <div class="text-xl text-[#333]  text font-semibold">
+                                    Write a review
+                                </div>
+                                <div class="text-xl text-[#666]  text font-normal">
+                                    Give a detailed and factual review of your institution
+                                    & help the future prospects in deciding the right college.
+                                    Remember You’re a part of critical decision-making process.
+                                    A reviewer, who has attended multiple institutions, can write
+                                    a review for all those institutions.
+                                </div>
+    
                             </div>
-
                         </div>
                     </div>
+                   
                 </div>
 
             </div>
 
-            <div class="relative text-left pl-40">
-                <div class="flex flex-row">
-                    <div class="flex flex-col basis-1/2">
-                        <div class="relative text-[42px] text-[#000] font-semibold pt-[31px] ">
-                            Join to Campus Ambassador Program
+            <div class="relative text-left lg:pl-40 bg-[#F8FAFB]">
+                <div class="flex lg:flex-row flex-col">
+                    <div class="flex flex-col lg:basis-1/2 basis-1 z-20">
+                        <div class=" lg:text-[42px] text-center  text-[#000] font-semibold pt-3 lg:pt-[31px] lg:w-[50%]" >
+                            Join to Campus Ambassador<br> Program
                         </div>
-                        <div class="relative text-base text-[#666] font-semibold pt-[22px] ">
+                        <div class=" text-center lg:text-left  text-base text-[#666] font-normal pt-3 pb-1 lg:pt-[22px] lg:pb-[86px] lg:w-[50%] "
+                             >
                             Campus Ambassador Program has been initiated to recognize smart and dedicated college
                             students and prov ide them with adequate opportunities to lear
                             n the industry-relevant skills, while earning Cash rewards and certifications from our
                             Industry-experts.
                         </div>
+                        <!--div class="relative text-center lg:text-left lg:pl-40 pl-4">
+                            <div class="lg:text-4xl font-semibold text-[#333] lg:pb-14  ">
+                                Benefit to <br>
+                                Campus Ambassador
+                            </div>
 
-                        <div class=" relative text-4xl font-semibold text-[#333] pt-[86px]">
-                            Benefit to <br>
-                            Campus Ambassador
-                        </div>
 
-                        <div class="relative  flex flex-row space-x-10 z-20">
-                            <div class="w-[402px] flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-1.svg"/>
-                                <div class="text-lg text-black font-normal">
-                                    Certificates of Internship/LOR
+                            
+                            <div class="flex w-full flex-col lg:flex-row gap-10 pb-10 justify-start  ">
+                                <div class="bg-white lg:w-[403px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Certificates of Internship/LOR" class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-1.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">
+                                        Certificates of Internship/LOR
+                                    </div>
+                                </div>
+                                <div class="bg-white lg:w-[367px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Free Subscription Vouchers" class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-2.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">Free
+                                        Subscription Vouchers
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-2.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Free Subscription Vouchers
+
+                            <div class="flex lg:w-[403px] flex-col lg:flex-row gap-10 pb-10  justify-start">
+                                <div class="bg-white flex flex-row gap-4 items-center shrink-0 px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Featuring on College.com" class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-3.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">
+                                        Featuring on College.com
+                                    </div>
+                                </div>
+                                <div class="bg-white lg:w-[435px] flex flex-row gap-4  items-center shrink-0 px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Instant PayTM cash payments" class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-4.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">Instant
+                                        PayTM cash payments
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="relative  flex flex-row space-x-10 z-20">
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-3.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Certificates of Internship/LOR
+                            <div class="flex lg:w-[330px] flex-col lg:flex-row gap-10 pb-10 justify-start">
+                                <div class="bg-white flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Social Media Promotions" class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-5.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">Social
+                                        Media Promotions
+                                    </div>
+                                </div>
+                                <div class="bg-white lg:w-[570px] flex flex-row gap-4 shrink-0  items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Internship opportunities at College.com HQ"
+                                         class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-6.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">
+                                        Internship opportunities at College.com HQ
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-4.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Certificates of Internship/LOR
+
+                            <div class="flex lg:w-[491px] flex-col lg:flex-row gap-10 pb-10  justify-start">
+                                <div class="bg-white flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Free Webinars and Counselling sessions"
+                                         class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-7.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">Free
+                                        Webinars and Counselling sessions
+                                    </div>
+                                </div>
+                                <div class="bg-white lg:w-[455px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Exclusive Collegedunia Merchandise"
+                                         class="min-h-0 min-w-0 w-12 shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-8.svg"/>
+                                    <div class="whitespace-nowrap shrink-1 text-xl  tracking-normal leading-7 ">
+                                        Exclusive Collegedunia Merchandise
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="relative  flex flex-row space-x-10 z-20">
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-5.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Certificates of Internship/LOR
+
+                        </div-->
+
+
+                        <!--div class=" lg:text-left text-center ">
+                            <div class=" text-[#333] lg:text-4xl text-lg font-semibold lg:mb-11 pl-2 lg:pl-40 ">
+                                What Will You be Up to
+                            </div>
+
+                            <div class="flex flex-col lg:w-[1130px] w-full lg:flex-row bg-white rounded-t-3xl px-6 pt-7 space-y-6 lg:space-x-6 shadow-lg">
+
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img alt="Review Collation" class="min-h-0 min-w-0 w-20"
+                                         src="./assets/LandingPage/review-collation.svg"/>
+                                    <p class="text-center">Review Collation</p>
+                                    <p class="text-center ">Collate College reviews, on Collegedunia.com using your
+                                        referral code
+                                        and get paid for each approved Review.</p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img alt="Ellipse" src="./assets/LandingPage/ellipse-blue.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img alt="Ellipse" src="./assets/LandingPage/ellipsebluetop.svg">
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/refer.svg"/>
+                                    <p class="text-center">Refer your friends</p>
+                                    <p class="text-center ">
+                                        Refer your friends to join the program, and Gain paytm cash for every approved
+                                        review that
+                                        they get.
+                                    </p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-blue.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipsebluetop.svg">
+                                    </div>
+                                </div>
+
+
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/represent.svg"/>
+                                    <p class="text-center">Representation</p>
+                                    <p class="text-center ">
+                                        Represent us your campus and provide insights into your campus through Articles
+                                        and Campus
+                                        Tour Videos
+                                    </p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-blue.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipse-red.svg">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="grid lg:w-[1130px] w-full grid-cols-1 lg:grid-cols-2 px-6 pb-7 gap-6 bg-white shadow-lg rounded-b-3xl ">
+
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/collaborate.svg"/>
+                                    <p class="text-center">Collaborations</p>
+                                    <p class="text-center ">Find, build and promote collaborations/ partnerships for
+                                        Collegedunia
+                                        with like- minded communities within your institution, promoting mutual learning
+                                        and growth.</p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-purple.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipse-purpletop.svg">
+                                    </div>
+                                </div>
+
+
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/interview.svg"/>
+                                    <p class="text-center">Guest Interviews</p>
+                                    <p class="text-center ">
+                                        Conduct insightful Student and Faculty
+                                        interviews to provide information about your institution,
+                                        and learn about their vision for the growth and welfare of the student.</p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-purple.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipsebluetop.svg">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-6.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Certificates of Internship/LOR
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative  flex flex-row space-x-10 z-20">
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-7.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Certificates of Internship/LOR
-                                </div>
-                            </div>
-                            <div class="flex flex-row space-x-4 py-2 px-4 bg-white rounded-md items-center">
-                                <img alt="Certificate of Internship" height="48px"
-                                     src="./assets/LandingPage/amb-8.svg"/>
-                                <div class="text-lg text-black font-normal whitespace-nowrap">
-                                    Certificates of Internship/LOR
-                                </div>
-                            </div>
-                        </div>
+
+
+                        </div-->
+                    </div>
+                    <div class="lg:basis-1/2 hidden lg:block absolute top-0 right-0 -mt-28 z-10">
+                        <img alt="ambasaddor-frame" class="lg:h-[774px] lg:w-[629px]"  src="./assets/LandingPage/ambasaddor-frame.png"
+                            />
 
                     </div>
-                    <div class="basis-1/2">
-                        <img alt="ambasaddor-frame" src="./assets/LandingPage/ambasaddor-frame.png"/>
-
-                    </div>
-
-
                 </div>
-
-
-
+                <div class="absolute left-0 right-0 bottom-0" >
+                    <img src="./assets/LandingPage/bg-transparent.png" alt="bg-transparent"  class="w-full h-[241px] z-30">
+                </div>
             </div>
 
-            <div class="relative text-left px-40">
-                <div class="pl-[88px] text-[#333] text-4xl font-semibold">
-                    Milestones and Rewards
+            <div class="relative text-left lg:pl-40 bg-[#FFF] lg:pt-[65px] pr-4 lg:pr-32">
+                <div class=" text-[#333] lg:text-4xl text-base font-semibold pb-2 lg:pb-11 pl-4 lg:pl-40 ">
+                    Milestones & Rewards
+                </div>
+                <!-- Approved reviews list-->
+                <div class=" grid  grid-cols-1 lg:grid-cols-5 space-y-2  mb-5 ml-8 lg:space-x-6 ">
+
+                    <div class="self-end flex flex-col h-[194px]">
+                        <div class="flex flex-row">
+                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                            <div class="font-semibold text-2xl text-[#333]">
+                                5
+                            </div>
+                        </div>
+                        <div class="font-normal text-[#666] text-sm">
+                            Approved Reviews
+                        </div>
+
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                            <div class="font-normal text-sm text-[#666]">
+                                Certificate of Participation (Beginner)
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="self-end flex flex-col h-[266px]">
+                        <div class="flex flex-row">
+                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                            <div class="font-semibold text-2xl text-[#333]">
+                                20
+                            </div>
+                        </div>
+                        <div class="font-normal text-[#666] text-sm">
+                            Approved Reviews
+                        </div>
+
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                            <div class="font-normal text-sm text-[#666]">
+                                Certificate of Participation (Beginner)
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Exclusive Collegedunia merchandise
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="self-end flex flex-col h-[299px]">
+                        <div class="flex flex-row">
+                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                            <div class="font-semibold text-2xl text-[#333]">
+                                35
+                            </div>
+                        </div>
+                        <div class="font-normal text-[#666] text-sm">
+                            Approved Reviews
+                        </div>
+
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                            <div class="font-normal text-sm text-[#666]">
+                                Internship Certificate (Master)
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Additional Paytm Cash Reward
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Social Media Promotions
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="self-end flex flex-col h-[343px]">
+                        <div class="flex flex-row">
+                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                            <div class="font-semibold text-2xl text-[#333]">
+                                50
+                            </div>
+                        </div>
+                        <div class="font-normal text-[#666] text-sm">
+                            Approved Reviews
+                        </div>
+
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                            <div class="font-normal text-sm text-[#666]">
+                                Certificate of Recognition (Jedi) and LOR
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Paytm Cash Reward (upto INR 500)
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Feature on CD Website and Social Media
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="self-end flex flex-col h-[374px]">
+                        <div class="flex flex-row">
+                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                            <div class="font-semibold text-2xl text-[#333]">
+                                > 50
+                            </div>
+                        </div>
+                        <div class="font-normal text-[#666] text-sm">
+                            Approved Reviews
+                        </div>
+
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                            <div class="font-normal text-sm text-[#666]">
+                                Paytm Cash Reward Per 25 Approved Reviews
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Featured Interview on CD Website and Social Media
+                            </div>
+                            <div class="font-normal text-sm text-[#666]">
+                                Linkedin Endorsements
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="flex flex-row bg-white rounded-md px-6 pt-7 space-x-6 shadow-lg">
-
-                    <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                        <img alt="Review Collation" src="./assets/LandingPage/review-collation.svg" class="min-h-0 min-w-0 w-20" />
-                        <p class="text-center">Review Collation</p>
-                        <p class="text-center ">Collate College reviews, on Collegedunia.com using your referral code and get paid for each approved Review.</p>
-                        <div class="absolute bottom-0 left-0">
-                            <img src="./assets/LandingPage/ellipse-blue.svg" alt="Ellipse">
-                        </div>
-                        <div class="absolute top-0 right-0">
-                            <img src="./assets/LandingPage/ellipsebluetop.svg" alt="Ellipse">
-                        </div>
+                <!--How to join commented out -->
+                <!--div class="flex lg:space-y-6  flex-col lg:pl-36">
+                    <div class=" text-[#333] text-4xl font-semibold pb-1 lg:pb-3  ">
+                        How to Join
                     </div>
-                    <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                        <img src="./assets/LandingPage/refer.svg" class="min-h-0 min-w-0 w-20" />
-                        <p class="text-center">Refer your friends</p>
-                        <p class="text-center ">
-                            Refer your friends to join the program, and Gain paytm cash for every approved review that they get.
-                            </p>
-                        <div class="absolute bottom-0 left-0">
-                            <img src="./assets/LandingPage/ellipse-blue.svg">
-                        </div>
-                        <div class="absolute top-0 right-0">
-                            <img src="./assets/LandingPage/ellipsebluetop.svg">
-                        </div>
-                    </div>
-
-
-                    <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                        <img src="./assets/LandingPage/represent.svg" class="min-h-0 min-w-0 w-20" />
-                        <p class="text-center">Representation</p>
-                        <p class="text-center ">
-                            Represent us your campus and provide insights into your campus through Articles and Campus Tour Videos
+                    <div class="flex flex-col lg:flex-row lg:space-x-[11px] space-x-2 items-center ">
+                        <img alt="Check Mark" height="28px" src="./assets/LandingPage/check.svg"/>
+                        <p class="text=[#333] tracking-tighter whitespace-nowrap text-base font-normal">
+                            Submit your review for your college using the Review Form. You will get your Referral code
+                            after submitting a review of your college
                         </p>
-                        <div class="absolute bottom-0 left-0">
-                            <img src="./assets/LandingPage/ellipse-blue.svg">
-                        </div>
-                        <div class="absolute top-0 right-0">
-                            <img src="./assets/LandingPage/ellipse-red.svg">
-                        </div>
                     </div>
+                    <div class="flex flex-col lg:flex-row lg:space-x-[11px] space-x-2 items-center ">
+                        <img alt="Check Mark" height="28px" src="./assets/LandingPage/check.svg"/>
+                        <p class="text=[#333] tracking-tighter  whitespace-nowrap text-base font-normal">
+                            Refer your colleagues to join as a campus ambassador using this Referral form
+                        </p>
+                    </div>
+                    <button class="text-center bg-[#003fe0] w-[323px] h-[48px] whitespace-nowrap py-3  font-semibold  leading-6 text-white rounded-full">
+                        See All Activity Guidline
+                    </button>
 
-                </div>
+
+                </div-->
+
+
+                <img alt="Linear Gradient" src="./assets/LandingPage/bottom-bg.svg"/>
 
             </div>
 
+            <div class="relative w-full ">
+                <div  class="absolute -z-10 top-0 left-0 right-0 max-h-[2320px] max-w-[1440px] overflow-hidden  hidden lg:block w-full "
+                >  <img alt="Linear Gradient"
+                        class="max-w-[1440px] object-cover" src="./assets/LandingPage/blue-bg.svg">
 
+                </div>
+
+
+                <div class="font-semibold lg:text-[42px] text-lg lg:leading-[60px] text-white pt-2 lg:pt-[50px]">
+                    Weekly Top Leaderboard
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:space-x-[38px] space-y-2 lg:pl-40 lg:pr-32">
+
+                    <div class="basis-1/2 ">
+                        <div class="flex flex-col px-7 bg-gradient-to-b from-[#00000033] to-transparent rounded-t-xl  pt-8">
+                            <p class="text-left text-4xl font-semibold  text-white "> Top Reviews </p>
+
+                            <div class=" relative flex flex-col lg:space-y-6 pt-[31px] -mb-[100px] min-h-[782px] max-h-[782px] overflow-hidden">
+                                <!-- Reviews Card -->
+                                <div class="flex flex-row bg-[#ffffff26] rounded-xl min-h-[302px] shrink-0">
+                                    <div class="flex flex-col basis-1/2 items-left justify-evenly pl-6 pb-6">
+                                        <div class="flex flex-col space-y-2 items-left pb-5 ">
+                                            <div class=" pt-2 pl-6 items-center">
+                                                <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                            </div>
+
+                                            <p class="text-base text-left font-semibold text-white  ">
+                                                Suraj Khandwal
+                                            </p>
+                                            <p class="text-sm text-left font-semibold text-[#ffffffb3] ">
+                                                Jaipur, Rajsthan
+                                            </p>
+                                        </div>
+
+
+                                        <div class="max-h-[118px] min-h-[118px] ">
+                                            <img alt="Achievements" height="118px" src="./assets/LandingPage/achievements.svg"/>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="flex flex-col basis-1/2 py-8 pr-[18px] space-y-4">
+
+                                        <div class=" flex flex-row justify-start gap-1  items-center px-2 rounded-lg bg-[#00000033] min-w-[222px]">
+                                            <img class="min-h-0 min-w-0 mr-1 shrink-0"
+                                                 src="./assets/LandingPage/star.svg"/>
+                                            <div class="text-xl  font-semibold  text-white  shrink-0 my-1"> 35</div>
+                                            <p class="text-sm font-normal   text-[#ffffffb3] "> Approved Reviews</p>
+                                        </div>
+                                        <p class="text-sm font-normal text-left  text-[#ffffffb3]"> “The annual is named as 'SANGRILLA' which is
+                                            the best thing I want to talk about and which is the best time... The annual
+                                            is named as 'SANGRILLA' which is the best thing I want to talk about and
+                                            which is the best time..
+                                        </p>
+                                        <p class="text-sm font-normal text-left text-[#ffffffb3]"> Kingston School of Management and Science
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                                  <!-- Reviews Card -->
+                                  <div class="flex flex-row bg-[#ffffff26] rounded-xl min-h-[302px] shrink-0">
+                                    <div class="flex flex-col basis-1/2 items-left justify-evenly pl-6 pb-6">
+                                        <div class="flex flex-col space-y-2 items-left pb-5 ">
+                                            <div class=" pt-2 pl-6 items-center">
+                                                <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                            </div>
+
+                                            <p class="text-base text-left font-semibold text-white  ">
+                                                Suraj Khandwal
+                                            </p>
+                                            <p class="text-sm text-left font-semibold text-[#ffffffb3] ">
+                                                Jaipur, Rajsthan
+                                            </p>
+                                        </div>
+
+
+                                        <div class="max-h-[118px] min-h-[118px] ">
+                                            <img alt="Achievements" height="118px" src="./assets/LandingPage/achievements.svg"/>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="flex flex-col basis-1/2 py-8 pr-[18px] space-y-4">
+
+                                        <div class=" flex flex-row justify-start gap-1  items-center px-2 rounded-lg bg-[#00000033] min-w-[222px]">
+                                            <img class="min-h-0 min-w-0 mr-1 shrink-0"
+                                                 src="./assets/LandingPage/star.svg"/>
+                                            <div class="text-xl  font-semibold  text-white  shrink-0 my-1"> 35</div>
+                                            <p class="text-sm font-normal   text-[#ffffffb3] "> Approved Reviews</p>
+                                        </div>
+                                        <p class="text-sm font-normal text-left  text-[#ffffffb3]"> “The annual is named as 'SANGRILLA' which is
+                                            the best thing I want to talk about and which is the best time... The annual
+                                            is named as 'SANGRILLA' which is the best thing I want to talk about and
+                                            which is the best time..
+                                        </p>
+                                        <p class="text-sm font-normal text-left text-[#ffffffb3]"> Kingston School of Management and Science
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                               
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="basis-1/2">
+                        <div class="flex flex-col px-7 min-h-[782px] max-h-[782px] overflow-hidden bg-gradient-to-b from-[#00000033] to-transparent rounded-t-xl pt-8 ">
+                            <p class="text-left text-4xl font-semibold  text-white "> Top Referrals </p>
+
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[22px] pt-8  overflow-hidden ">
+                                <!-- Referrals card -->
+                                <div class=" flex flex-col bg-white/10 rounded-xl
+                                 shadow-md justify-evenly items-center p-5 min-h-[325px]  max-h-[325px]">
+                                 <div class="flex items-center flex-col space-y-1 pb-8">
+                                    <div class="pb-1">
+                                        
+                                    <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                    </div>
+                                    <div class="text-base font-semibold text-white">
+                                        Suraj Khandwal
+                                    </div>
+                                    <div class="text-sm font-semibold text-[#ffffffb3]">
+                                        Jaipur, Rajsthan
+                                    </div>
+                                 </div>
+                                 <div class="flex flex-col space-y-3">
+                                    <!-- card with no of referrals-->
+                                    <div class="flex flex-row p-1  rounded-full bg-black/20 items-center w-[204px]">
+                                        <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                        <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                            345
+                                        </div>
+                                        <div class="text-sm font-semibold text-[#ffffffb3]">
+                                            Refferals
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row p-1 rounded-full bg-black/20 items-center w-[204px]">
+                                        <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                        <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                            345
+                                        </div>
+                                        <div class="text-sm font-semibold text-[#ffffffb3]">
+                                            Refferals
+                                        </div>
+                                    </div>
+                                 </div>
+                                    
+
+                                </div>
+                                <div class=" flex flex-col bg-white/10 rounded-xl
+                                shadow-md justify-evenly items-center p-5 min-h-[325px]  max-h-[325px]">
+                                <div class="flex items-center flex-col space-y-1 pb-8">
+                                   <div class="pb-1">
+                                       
+                                   <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                   </div>
+                                   <div class="text-base font-semibold text-white">
+                                       Suraj Khandwal
+                                   </div>
+                                   <div class="text-sm font-semibold text-[#ffffffb3]">
+                                       Jaipur, Rajsthan
+                                   </div>
+                                </div>
+                                <div class="flex flex-col space-y-3">
+                                   <!-- card with no of referrals-->
+                                   <div class="flex flex-row p-1  rounded-full bg-black/20 items-center w-[204px]">
+                                       <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                       <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                           345
+                                       </div>
+                                       <div class="text-sm font-semibold text-[#ffffffb3]">
+                                           Refferals
+                                       </div>
+                                   </div>
+                                   <div class="flex flex-row p-1 rounded-full bg-black/20 items-center w-[204px]">
+                                       <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                       <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                           345
+                                       </div>
+                                       <div class="text-sm font-semibold text-[#ffffffb3]">
+                                           Refferals
+                                       </div>
+                                   </div>
+                                </div>
+                                   
+
+                               </div>
+                               <div class=" flex flex-col bg-white/10 rounded-xl
+                               shadow-md justify-evenly items-center p-5 min-h-[325px]  max-h-[325px]">
+                               <div class="flex items-center flex-col space-y-1 pb-8">
+                                  <div class="pb-1">
+                                      
+                                  <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                  </div>
+                                  <div class="text-base font-semibold text-white">
+                                      Suraj Khandwal
+                                  </div>
+                                  <div class="text-sm font-semibold text-[#ffffffb3]">
+                                      Jaipur, Rajsthan
+                                  </div>
+                               </div>
+                               <div class="flex flex-col space-y-3">
+                                  <!-- card with no of referrals-->
+                                  <div class="flex flex-row p-1  rounded-full bg-black/20 items-center w-[204px]">
+                                      <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                      <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                          345
+                                      </div>
+                                      <div class="text-sm font-semibold text-[#ffffffb3]">
+                                          Refferals
+                                      </div>
+                                  </div>
+                                  <div class="flex flex-row p-1 rounded-full bg-black/20 items-center w-[204px]">
+                                      <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                      <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                          345
+                                      </div>
+                                      <div class="text-sm font-semibold text-[#ffffffb3]">
+                                          Refferals
+                                      </div>
+                                  </div>
+                               </div>
+                                  
+
+                              </div>
+                              <div class=" flex flex-col bg-white/10 rounded-xl
+                              shadow-md justify-evenly items-center p-5 min-h-[325px]  max-h-[325px]">
+                              <div class="flex items-center flex-col space-y-1 pb-8">
+                                 <div class="pb-1">
+                                     
+                                 <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                 </div>
+                                 <div class="text-base font-semibold text-white">
+                                     Suraj Khandwal
+                                 </div>
+                                 <div class="text-sm font-semibold text-[#ffffffb3]">
+                                     Jaipur, Rajsthan
+                                 </div>
+                              </div>
+                              <div class="flex flex-col space-y-3">
+                                 <!-- card with no of referrals-->
+                                 <div class="flex flex-row p-1  rounded-full bg-black/20 items-center w-[204px]">
+                                     <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                     <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                         345
+                                     </div>
+                                     <div class="text-sm font-semibold text-[#ffffffb3]">
+                                         Refferals
+                                     </div>
+                                 </div>
+                                 <div class="flex flex-row p-1 rounded-full bg-black/20 items-center w-[204px]">
+                                     <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                     <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                         345
+                                     </div>
+                                     <div class="text-sm font-semibold text-[#ffffffb3]">
+                                         Refferals
+                                     </div>
+                                 </div>
+                              </div>
+                                 
+
+                             </div>
+                             <div class=" flex flex-col bg-white/10 rounded-xl
+                               shadow-md justify-evenly items-center p-5 min-h-[325px]  max-h-[325px]">
+                               <div class="flex items-center flex-col space-y-1 pb-8">
+                                  <div class="pb-1">
+                                      
+                                  <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                  </div>
+                                  <div class="text-base font-semibold text-white">
+                                      Suraj Khandwal
+                                  </div>
+                                  <div class="text-sm font-semibold text-[#ffffffb3]">
+                                      Jaipur, Rajsthan
+                                  </div>
+                               </div>
+                               <div class="flex flex-col space-y-3">
+                                  <!-- card with no of referrals-->
+                                  <div class="flex flex-row p-1  rounded-full bg-black/20 items-center w-[204px]">
+                                      <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                      <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                          345
+                                      </div>
+                                      <div class="text-sm font-semibold text-[#ffffffb3]">
+                                          Refferals
+                                      </div>
+                                  </div>
+                                  <div class="flex flex-row p-1 rounded-full bg-black/20 items-center w-[204px]">
+                                      <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                      <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                          345
+                                      </div>
+                                      <div class="text-sm font-semibold text-[#ffffffb3]">
+                                          Refferals
+                                      </div>
+                                  </div>
+                               </div>
+                                  
+
+                              </div>
+                              <div class=" flex flex-col bg-white/10 rounded-xl
+                              shadow-md justify-evenly items-center p-5 min-h-[325px]  max-h-[325px]">
+                              <div class="flex items-center flex-col space-y-1 pb-8">
+                                 <div class="pb-1">
+                                     
+                                 <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
+                                 </div>
+                                 <div class="text-base font-semibold text-white">
+                                     Suraj Khandwal
+                                 </div>
+                                 <div class="text-sm font-semibold text-[#ffffffb3]">
+                                     Jaipur, Rajsthan
+                                 </div>
+                              </div>
+                              <div class="flex flex-col space-y-3">
+                                 <!-- card with no of referrals-->
+                                 <div class="flex flex-row p-1  rounded-full bg-black/20 items-center w-[204px]">
+                                     <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                     <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                         345
+                                     </div>
+                                     <div class="text-sm font-semibold text-[#ffffffb3]">
+                                         Refferals
+                                     </div>
+                                 </div>
+                                 <div class="flex flex-row p-1 rounded-full bg-black/20 items-center w-[204px]">
+                                     <img alt="Refferals" height="44px" src="./assets/LandingPage/trophy-1.svg"/>
+                                     <div class="text-xl font-semibold text-white pl-3 pr-2">
+                                         345
+                                     </div>
+                                     <div class="text-sm font-semibold text-[#ffffffb3]">
+                                         Refferals
+                                     </div>
+                                 </div>
+                              </div>
+                                 
+
+                             </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute top-0 left-0 right-0 -z-10">
+                        <img alt="Linear Gradient" src="./assets/LandingPage/amb-top.png"/>
+                    </div>
+
+                    <div class="font-semibold lg:text-[42px] pt-2 text-xs lg:leading-[60px] text-white lg:pt-[50px]">
+                        Top 10 Campus Ambassador Performers
+                    </div>
+
+                    <div class="bg-black/20 lg:w-[449px] flex flex-row lg:mx-auto lg:gap-20 items-center pl-2 lg:pr-20 py-1 rounded-full ">
+                        <div class="bg-white flex flex-col w-[211px] lg:shrink-0 h-8 items-center py-1 rounded-full">
+                            <div class="font-semibold text-base  text-[#003FE0] ">
+                                Monthly
+                            </div>
+                        </div>
+                        <div class="font-semibold text-base text-white/70  lg:shrink-0">
+                            Quarterly
+                        </div>
+                    </div>
+                    <!-- List of top perfomers -->
+                    <div class="lg:pl-40 pl-5 pr-4 lg:pr-32 pt-1 lg:pt-10">
+                        <div class="flex flex-col space-y-4 ">
+
+                            <div class=" flex  flex-col lg:flex-row lg:justify-between  lg:gap-1  items-center pt-1 pl-6 pr-9  rounded-lg shadow-lg bg-black/20">
+                                <div class="flex lg:flex-row flex-col items-center">
+                                  
+                                    <div class="flex flex-col lg:flex-row lg:space-x-4 items-center">
+                                        <img class="w-12 h-12" src="./assets/LandingPage/king-1.svg"/>
+                                        <div class="flex flex-col">
+                                            <p class="whitespace-nowrap text-base font-semibold  text-[white] ">
+                                                Suraj Khandwal
+                                            </p>
+                                            <p class="text-center whitespace-nowrap text-sm  text-[white]">
+                                                Jaipur, Rajsthan
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="bg-[#ffffff]/8 flex flex-col lg:flex-row justify-start gap-3 items-center pl-5 pr-3 rounded-full py-2">
+                                    <div class="text-sm  text-[white]  shrink-0">
+                                        Achievement
+                                    </div>
+
+                                    <div class="flex flex-row">
+                                        <img
+                                            class="min-h-0 min-w-0 lg:w-12  lg:shrink-0 "
+                                            src="./assets/LandingPage/pin.svg"
+                                    />
+                                    <img
+                                            class="min-h-0 min-w-0 lg:w-12 lg:shrink-0"
+                                            src="./assets/LandingPage/linkedin.svg"
+                                    />
+                                    <img
+                                            class="min-h-0 min-w-0  lg:w-12 lg:shrink-0"
+                                            src="./assets/LandingPage/paytm.svg"
+                                    />
+                                    <img
+                                            class="min-h-0 min-w-0 lg:w-12 lg:shrink-0"
+                                            src="./assets/LandingPage/horn.svg"
+                                    />
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="flex flex-row space-x-4 pb-5 lg:pb-0">
+                                    <img class="w-12 h-12" src="./assets/LandingPage/trophy.svg"/>
+                                    <div class="flex flex-col">
+                                        <p class="whitespace-nowrap text-base font-semibold  text-[white] ">
+                                            ₹7010
+                                        </p>
+                                        <p class="text-center whitespace-nowrap text-sm  text-[white]">
+                                            Rewards
+                                        </p>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                           
+
+                        </div>
+                    </div>
+
+<div class="relative">
+    <img alt="Linear Gradient"
+    class="absolute top-0 left-0 right-0 -z-10 max-w-[1440px]  overflow-hidden  hidden lg:block w-full "
+    src="./assets/LandingPage/rules-bg.svg">
+   
+   
+    <div class="font-semibold text-xs lg:text-[42px]  lg:leading-[60px] text-black  pt-2 lg:pt-[50px]">
+        Rules and Guidelines
+    </div>
+
+    <div class="flex lg:flex-row flex-col"> 
+
+        <div class="basis-0 lg:basis-1/2">
+            <div class="z-10">
+                <img alt="Rewards Trophy"
+
+                     src="./assets/LandingPage/rules-frame.svg"/>
+            </div>
+        </div>
+        <div class="lg:basis-1/2 basis-1">
+
+            <div class="flex flex-col pr-5 pl-4 lg:pb-0 pb-5 lg:pl-0 lg:pr-[155px]">
+<p class="text-xl text-semibold font-normal text-[#333] text-center lg:text-left">
+    Key Point
+</p>
+
+<div class="flex flex-col text-center lg:text-left space-y-2 lg:space-y-5">
+<div class="flex flex-row space-x-3">
+<img src="./assets/LandingPage/check.svg" alt="Check Icon" height="28px"/>
+<p class="text-xl text-left text-[#666] font-normal">
+    Add maximum details to your answer
+</p>
+</div>
+<div class="flex flex-row space-x-3">
+    <img src="./assets/LandingPage/check.svg" alt="Check Icon" height="28px"/>
+    <p class="text-xl text-left text-[#666] font-normal">
+        There should be no plagiarism and negative content about the college
+    </p>
+    </div>
+    <div class="flex flex-row space-x-3">
+        <img src="./assets/LandingPage/check.svg" alt="Check Icon" height="28px"/>
+        <p class="text-xl text-left text-[#666] font-normal">
+            Review should be written only for the courses offered by the college
+        </p>
+        </div>
+        <div class="flex flex-row space-x-3">
+            <img src="./assets/LandingPage/check.svg" alt="Check Icon" height="28px"/>
+            <p class="text-xl text-left text-[#666] font-normal">
+                Mention facts and figures as per your best knowledge
+            </p>
+            </div>
+ <div class="flex flex-row space-x-3">
+                <img src="./assets/LandingPage/check.svg" alt="Check Icon" height="28px"/>
+                <p class="text-xl text-left text-[#666] font-normal">
+                    A good validated review will also lead to better reward
+                </p>
+                </div>
+</div>
+
+
+            </div>
         </div>
 
+        
+    
+    </div>
 
+    <div class="bg-[url('./assets/LandingPage/rules-bottom.png')] z-10 lg:px-68 flex flex-col lg:flex-row items-center justify-center space-y-2 lg:space-x-24 lg:py-16 lg:mb-9 lg:mt-4">
+        <div class="text-center lg:text-left font-['Inter'] lg:text-xl font-semibold text-[#666666]">Help millions of students in making informed <br> career decisions.</div>
+        <button class="flex px-20 bg-[#003FE0] rounded-md py-3">
+          <p class="lg:whitespace-nowrap text-base font-semibold text-[#FFFFFF]">Write a review and win ₹200</p>
+        </button>
+      </div>
+    
+
+    </div>
+
+   
+    
+                    
+                </div>
+
+            </div>
+
+            <!--div class="relative hidden lg:block bottom-0 left-0 right-0" >
+                <div class="bg-[#0c0439] flex flex-row gap-px  w-full items-center px-40 py-8">
+                    <div class="flex flex-col gap-4 h-[279px] items-start mt-1 mr-6">
+                      <img
+                      src="./assets/LandingPage/logo.svg"
+                        class="min-h-0 min-w-0 mb-8"
+                      />
+                      <div class="text-lg  font-medium  text-[#d3ccf6] w-3/5">
+                        Get started now try our product
+                      </div>
+                      <div class="self-stretch relative flex flex-col mb-12 mr-[108px]">
+                        <div class="w-2/5 text-lg whitespace-nowrap font-medium  text-[#7e76a8] absolute top-4 left-5 h-8">
+                          Enter your email here
+                        </div>
+                        <div class="border-solid border-[#7e76a8] flex flex-col items-end p-1 border-2 rounded-lg">
+                          <div class=" flex flex-col justify-center w-12 h-12 shrink-0 items-center">
+                            <img
+                              src="./assets/LandingPage/forwardbtn.svg"
+                              class="min-h-0 min-w-0 w-[46px] h-[46px]"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whitespace-nowrap text-lg  font-medium  text-[#a097cf] self-stretch">
+                        © 2023 Rewards&Review Inc. Copyright and rights reserved
+                      </div>
+                    </div>
+                    <div class="self-start flex flex-col gap-6 h-48 items-start mt-1 mr-20">
+                      <div class=" font-medium text-white mb-2 w-16">
+                        Support
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] w-3/5">
+                        Help centre
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] self-stretch">
+                        Account information
+                      </div>
+                      <div class=" font-medium text-[#d3ccf6] w-12">About</div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] w-1/2">
+                        Contact us
+                      </div>
+                    </div>
+                    <div class="flex flex-col mr-2 gap-6 h-[279px] items-start">
+                      <div class="whitespace-nowrap  font-medium text-white self-stretch mb-2 mr-16">
+                        Help and Solution
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] w-3/5">
+                        Talk to support
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] w-1/2">
+                        Support docs
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] w-1/2">
+                        System status
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] mb-8 w-3/5">
+                        Covid responde
+                      </div>
+                      <div class="text-lg  font-medium  text-[#d3ccf6] self-stretch whitespace-nowrap ml-4">
+                        Terms and Condtions
+                      </div>
+                    </div>
+                   
+                    <div class="flex flex-col gap-6 h-[279px] items-start">
+                      <div class=" font-medium text-white mb-2 w-1/2">
+                        Product
+                      </div>
+                      <div class=" font-medium text-[#d3ccf6] w-2/5">
+                        Update
+                      </div>
+                      <div class=" font-medium text-[#d3ccf6] w-1/2">
+                        Security
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] w-1/2">
+                        Beta test
+                      </div>
+                      <div class="whitespace-nowrap  font-medium text-[#d3ccf6] self-stretch mb-8 mr-3">
+                        Pricing product
+                      </div>
+                      <div class="text-lg  font-medium  text-[#d3ccf6] self-stretch ml-2">
+                        Privacy Policy
+                      </div>
+                    </div>
+                  </div>
+            </div-->
+
+           
+
+        </div>
+       
 
 
     </section>
 
-    <footer class="relative bottom-0 left-0 right-0 bg-[#0C0439] pl-[155px] pr-[168px]">
-
-    </footer>
-
+    
 
 
 </div>
