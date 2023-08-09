@@ -23,6 +23,11 @@ module.exports = {
             // => @media (min-width: 1536px) { ... }
           },
         extend: {
+            backgroundImage: {
+                'hero-pattern': "url('./assets/LandingPage/landing-bg-1.png')",
+                'footer-texture': "url('/img/footer-texture.png')",
+              },
+        
             fontFamily: {
                 inter: ['Inter', 'sans-serif'],
                 saira: ['Saira', 'sans-serif'],

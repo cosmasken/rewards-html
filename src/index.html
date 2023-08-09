@@ -20,7 +20,7 @@
         </div>
     
         <img alt="Linear Gradient"
-             class="absolute top-0 left-0 right-0 lg:max-h-[1745px] lg:max-w-[2236.5px] overflow-hidden hidden lg:block w-full h-auto"
+             class="absolute top-0 left-0 right-0  overflow-hidden hidden lg:block w-full h-auto"
              src="./assets/LandingPage/landing-bg-1.png">
 
         <!--img alt="Linear Gradient"
@@ -30,92 +30,76 @@
 
     </section>
     <section class="relative w-full">
-        <div class="absolute top-0 left-0 right-0 flex flex-col  lg:pl-40 lg:pr-20">
-            <nav class="bg-transparent  relative w-full lg:pb-28">
-                <div class="mx-auto max-w-2xl px-2 lg:px-6 lg:px-8">
-                    <div class="relative flex h-16 justify-between">
-                        <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                            <!-- Mobile menu button -->
-                            <button aria-controls="mobile-menu"
-                                    aria-expanded="false"
-                                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                                    type="button">
-                                <span class="absolute -inset-0.5"></span>
-                                <span class="sr-only">Open main menu</span>
-                                <!--
-                                  Icon when menu is closed.
-
-                                  Menu open: "hidden", Menu closed: "block"
-                                -->
-                                <svg aria-hidden="true" class="block h-6 w-6" fill="none" stroke="currentColor"
-                                     stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                                <!--
-                                  Icon when menu is open.
-
-                                  Menu open: "block", Menu closed: "hidden"
-                                -->
-                                <svg aria-hidden="true" class="hidden h-6 w-6" fill="none" stroke="currentColor"
-                                     stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="relative top-0 left-0 right-0 flex flex-col  lg:pl-40 lg:pr-20">
+            <div x-data="{  mobileMenuOpen: false }">
+                <div class="relative bg-transparent">
+                    <div class="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-0">
+                        <div x-show="!mobileMenuOpen" class="flex justify-start lg:w-0 lg:flex-1">
+                            <a class="inline-flex items-center  px-1 pt-1 text-3xl font-saira font-bold text-[#EAD7FF]"
+                            href="#">Rewards
+                             & Review</a>
+                        </div>
+                        <div class="-my-2 -mr-2 md:hidden w-full flex justify-end">
+                            <button x-show="!mobileMenuOpen" @click="mobileMenuOpen = !mobileMenuOpen" class=" inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset" id="headlessui-popover-button-1"
+                                type="button" aria-expanded="false">
+                                <span class="sr-only">Open menu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16">
+                                    </path>
                                 </svg>
                             </button>
-                        </div>
-                        <div class="hidden lg:block">
-                            <div class="flex flex-1  items-stretch justify-between">
-                                <div class="flex flex-shrink-0 items-center">
-                                    <a class="inline-flex items-center  px-1 pt-1 text-3xl font-saira font-bold text-[#EAD7FF]"
-                                       href="#">Rewards
-                                        & Review</a>
-    
-    
+                            <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-transparent w-full">
+                                <div class="px-5 pt-6 pb-4">
+                                    <div class="flex items-center justify-between mb-6">
+                                        <div>
+                                            <img class="w-auto h-10" src="./assets/LandingPage/logo.svg" alt="Workflow" />
+                                        </div>
+                                        <div class="-mr-2" @click="mobileMenuOpen = false">
+                                            <button class="inline-flex items-center justify-center p-2 text-gray-400 bg-transparent rounded-md" type="button">
+                                                <span class="sr-only">Close menu</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M6 18L18 6M6 6l12 12"></path>
+                                                </svg>
+                                            </button>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </div>
-                                <div class="  ml-6 flex space-x-8 ">
-                                    <a class="inline-flex items-center  px-2 py-1  font-bold text-white text-base hover:text-lg "
-                                       href="#">Rewards</a>
-                                    <a class="inline-flex items-center   px-1 pt-1  font-bold text-white text-base hover:text-lg "
-                                       href="#">Join
-                                        Us</a>
-                                    <a class="inline-flex items-center   px-1 pt-1  font-bold text-white text-base hover:text-lg"
-                                       href="#">Leaderboard</a>
-    
-                                    <a class="inline-flex items-center    px-1 pt-1  font-bold text-white text-base hover:text-lg "
-                                       href="#">Rules</a>
-    
-                                    <button class="rounded-md bg-[#0036F533]  h-6 px-2 py-1   text-center text-base hover:text-lg font-bold text-white shadow-sm ring-1 ring-inset ring-white hover:bg-[#0036F533]"
-                                            type="button">
-                                        <a class=" " href="#">Login</a>
-    
-                                    </button>
-    
-    
+                                <div class="px-5 pb-6">
+                                    <div class="flex flex-col gap-4">
+                                        <a href="/" class="text-base font-bold text-white">Rewards</a>
+                                        <a href="/" class="text-base font-bold text-white">Join US</a>
+                                        <a href="/" class="text-base font-bold text-white">Leaderboard</a>
+                                        <a href="/" class="text-base font-bold text-white">Rules</a>
+                                    </div>
+                                    
                                 </div>
                             </div>
+
                         </div>
-                       
 
-                    </div>
-                </div>
+                        <nav class="justify-end hidden md:flex space-x-14">
+                            <a aria-current="page" href="/" class="router-link-active router-link-exact-active ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">
+                                Rewards
+                            </a>
+                            <a href="/product.html" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Join Us</a>
+                           
+                            <a href="/company.html" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Leaderboard</a>
+                            <a href="/login.html" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Rules
+                                </a>
+                          
 
-                <!-- Mobile menu, show/hide based on menu state. -->
-                <div class="lg:hidden" id="mobile-menu">
-                    <div class="space-y-1 pb-4 pt-2">
-                        <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-                        <a class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
-                           href="#">Rewards</a>
-                        <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Join Us</a>
-                        <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Leaderboard</a>
-                        <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Rules</a>
-                           <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                           href="#">Login</a>
+                        </nav>
                     </div>
+                    <!---->
                 </div>
-            </nav>
+            </div>
 
             <div class="relative lg:text-left text-center lg:text-5xl text-white lg:pb-5 font-extrabold">
                 Share your College Experience
@@ -123,23 +107,23 @@
         
 
 
-            <div class="text-center justify-center relative  lg:shadow-lg shadow-sm bg-[#00000026]  rounded-md lg:w-[66%] w-[50%]">
+            <div class="text-center justify-center relative mx-auto lg:mx-0  lg:shadow-lg shadow-sm bg-[#00000026]  rounded-md lg:w-[66%] w-[50%]">
 
 
-                <input class="w-full  lg:h-[72px]  rounded-md border-0 py-1.5 pl-10 text-[#272937B2] ring-4 ring-inset ring-[#00000026] placeholder:text-[#272937B2] placeholder:text-xl focus:ring-2 focus:ring-inset focus:ring-[#272937B2] lg:text-sm lg:leading-6"
+                <input class="w-full  lg:h-[72px]  rounded-md border-0 py-1.5 lg:pl-10 text-[#272937B2] ring-4 ring-inset ring-[#00000026] placeholder:text-[#272937B2] lg:placeholder:text-xl placeholder:text-xs focus:ring-2 focus:ring-inset focus:ring-[#272937B2] lg:text-sm lg:leading-6"
                        id="college" name="college"
                        placeholder="Search Your College"
                        type="text">
             </div>
 
-            <div class="relative lg:text-2xl text-xs text-center text-white lg:pt-5 pt-1 font-semibold ">
+            <div class="relative lg:text-2xl text-xs lg:text-left text-center text-white lg:pt-5 pt-1 font-semibold ">
                 Help millions of students in making informed career decisions.
             </div>
 
 
         </div>
 
-        <div class=" absolute top-[750px] left-0 right-0 text-center">
+        <div class=" relative pt-6 lg:pt-[609px] left-0 right-0 text-center">
             <div class="lg:text-2xl text-base text-[#333] text-center lg:mx-auto font-semibold">
                 How To win
             </div>
@@ -176,11 +160,11 @@
                                     class="hidden self-start lg:block h-[64px] w-[64px]"
                                     src="./assets/LandingPage/review-1.svg " style="align-self: start;"/>
     
-                            <div class="flex flex-col text-left">
-                                <div class="text-xl text-[#333]   font-semibold">
+                            <div class="flex flex-col ">
+                                <div class="text-xl text-[#333] text-center lg:text-left   font-semibold">
                                     Write a review
                                 </div>
-                                <div class="text-xl text-[#666]   font-normal">
+                                <div class="text-xl text-[#666] text-left  font-normal">
                                     Give a detailed and factual review of your institution
                                     & help the future prospects in deciding the right college.
                                     Remember You’re a part of critical decision-making process.
@@ -197,11 +181,11 @@
                                  src="./assets/LandingPage/review-1.svg"
                                  style="align-self: start;"/>
     
-                            <div class="flex flex-col text-left">
-                                <div class="text-xl text-[#333]  text font-semibold">
+                            <div class="flex flex-col ">
+                                <div class="text-xl text-[#333] text-center lg:text-left text font-semibold">
                                     Write a review
                                 </div>
-                                <div class="text-xl text-[#666]  text font-normal">
+                                <div class="text-xl text-[#666] text-left text font-normal">
                                     Give a detailed and factual review of your institution
                                     & help the future prospects in deciding the right college.
                                     Remember You’re a part of critical decision-making process.
@@ -416,13 +400,13 @@
             </div>
 
             <div class="relative text-left lg:pl-40 bg-[#FFF] lg:pt-[65px] pr-4 lg:pr-32">
-                <div class=" text-[#333] lg:text-4xl text-base font-semibold pb-2 lg:pb-11 pl-4 lg:pl-40 ">
+                <div class=" text-[#333] text-center lg:text-left lg:text-4xl text-base font-semibold pb-2 lg:pb-11 pl-4 lg:pl-40 ">
                     Milestones & Rewards
                 </div>
                 <!-- Approved reviews list-->
-                <div class=" grid  grid-cols-1 lg:grid-cols-5 space-y-2  mb-5 ml-8 lg:space-x-6 ">
+                <div class=" grid  grid-cols-1 lg:grid-cols-5 space-y-2  lg:mb-5 ml-8 lg:space-x-6 ">
 
-                    <div class="self-end flex flex-col h-[194px]">
+                    <div class="self-end flex flex-col lg:h-[194px]">
                         <div class="flex flex-row">
                             <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
                             <div class="font-semibold text-2xl text-[#333]">
@@ -433,7 +417,7 @@
                             Approved Reviews
                         </div>
 
-                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
                             <div class="font-normal text-sm text-[#666]">
                                 Certificate of Participation (Beginner)
                             </div>
@@ -441,7 +425,7 @@
 
                     </div>
 
-                    <div class="self-end flex flex-col h-[266px]">
+                    <div class="self-end flex flex-col lg:h-[266px]">
                         <div class="flex flex-row">
                             <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
                             <div class="font-semibold text-2xl text-[#333]">
@@ -452,7 +436,7 @@
                             Approved Reviews
                         </div>
 
-                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
                             <div class="font-normal text-sm text-[#666]">
                                 Certificate of Participation (Beginner)
                             </div>
@@ -463,7 +447,7 @@
 
                     </div>
 
-                    <div class="self-end flex flex-col h-[299px]">
+                    <div class="self-end flex flex-col lg:h-[299px]">
                         <div class="flex flex-row">
                             <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
                             <div class="font-semibold text-2xl text-[#333]">
@@ -474,7 +458,7 @@
                             Approved Reviews
                         </div>
 
-                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
                             <div class="font-normal text-sm text-[#666]">
                                 Internship Certificate (Master)
                             </div>
@@ -488,7 +472,7 @@
 
                     </div>
 
-                    <div class="self-end flex flex-col h-[343px]">
+                    <div class="self-end flex flex-col lg:h-[343px]">
                         <div class="flex flex-row">
                             <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
                             <div class="font-semibold text-2xl text-[#333]">
@@ -499,7 +483,7 @@
                             Approved Reviews
                         </div>
 
-                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
                             <div class="font-normal text-sm text-[#666]">
                                 Certificate of Recognition (Jedi) and LOR
                             </div>
@@ -513,7 +497,7 @@
 
                     </div>
 
-                    <div class="self-end flex flex-col h-[374px]">
+                    <div class="self-end flex flex-col lg:h-[374px]">
                         <div class="flex flex-row">
                             <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
                             <div class="font-semibold text-2xl text-[#333]">
@@ -524,7 +508,7 @@
                             Approved Reviews
                         </div>
 
-                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 space-y-7 rounded-md">
+                        <div class="bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
                             <div class="font-normal text-sm text-[#666]">
                                 Paytm Cash Reward Per 25 Approved Reviews
                             </div>
@@ -572,12 +556,12 @@
             <div class="relative w-full ">
                 <div  class="absolute -z-10 top-0 left-0 right-0 max-h-[2320px] max-w-[1440px] overflow-hidden  hidden lg:block w-full "
                 >  <img alt="Linear Gradient"
-                        class="max-w-[1440px] object-cover" src="./assets/LandingPage/blue-bg.svg">
+                        class=" object-cover" src="./assets/LandingPage/blue-bg.svg">
 
                 </div>
 
 
-                <div class="font-semibold lg:text-[42px] text-lg lg:leading-[60px] text-white pt-2 lg:pt-[50px]">
+                <div class="font-semibold text-center lg:text-[42px] text-lg lg:leading-[60px] text-black lg:text-white pt-2 lg:pt-[50px]">
                     Weekly Top Leaderboard
                 </div>
 
@@ -585,12 +569,13 @@
 
                     <div class="basis-1/2 ">
                         <div class="flex flex-col px-7 bg-gradient-to-b from-[#00000033] to-transparent rounded-t-xl  pt-8">
-                            <p class="text-left text-4xl font-semibold  text-white "> Top Reviews </p>
+                <div class=" grid  grid-cols-1 lg:grid-cols-5 space-y-2  lg:mb-5 lg:ml-8 lg:space-x-6 ">
+                            <p class="lg:text-left text-center lg:text-4xl text-base font-semibold  text-white "> Top Reviews </p>
 
-                            <div class=" relative flex flex-col lg:space-y-6 pt-[31px] -mb-[100px] min-h-[782px] max-h-[782px] overflow-hidden">
+                            <div class=" relative flex flex-col lg:space-y-6 space-y-2 lg:pt-[31px] pt-2 lg:-mb-[100px] min-h-[782px] max-h-[782px] overflow-hidden">
                                 <!-- Reviews Card -->
-                                <div class="flex flex-row bg-[#ffffff26] rounded-xl min-h-[302px] shrink-0">
-                                    <div class="flex flex-col basis-1/2 items-left justify-evenly pl-6 pb-6">
+                                <div class="flex flex-col px-4 lg:px-0 lg:flex-row bg-black/20 lg:bg-[#ffffff26] rounded-xl lg:min-h-[302px] lg:shrink-0">
+                                    <div class="flex flex-row lg:flex-col basis-1/2 items-center lg:items-left justify-evenly pl-6 pb-6">
                                         <div class="flex flex-col space-y-2 items-left pb-5 ">
                                             <div class=" pt-2 pl-6 items-center">
                                                 <img alt="King" height="64px" src="./assets/LandingPage/king-1.svg"/>
@@ -605,13 +590,13 @@
                                         </div>
 
 
-                                        <div class="max-h-[118px] min-h-[118px] ">
+                                        <div class="lg:max-h-[118px] lg:min-h-[118px] ">
                                             <img alt="Achievements" height="118px" src="./assets/LandingPage/achievements.svg"/>
                                         </div>
 
                                     </div>
 
-                                    <div class="flex flex-col basis-1/2 py-8 pr-[18px] space-y-4">
+                                    <div class="flex flex-col basis-1/2 py-8 lg:pr-[18px] space-y-4">
 
                                         <div class=" flex flex-row justify-start gap-1  items-center px-2 rounded-lg bg-[#00000033] min-w-[222px]">
                                             <img class="min-h-0 min-w-0 mr-1 shrink-0"
@@ -631,7 +616,7 @@
 
                                 </div>
                                   <!-- Reviews Card -->
-                                  <div class="flex flex-row bg-[#ffffff26] rounded-xl min-h-[302px] shrink-0">
+                                  <div class="flex flex-row bg-black/20 lg:bg-[#ffffff26] rounded-xl lg:min-h-[302px] lg:shrink-0">
                                     <div class="flex flex-col basis-1/2 items-left justify-evenly pl-6 pb-6">
                                         <div class="flex flex-col space-y-2 items-left pb-5 ">
                                             <div class=" pt-2 pl-6 items-center">
@@ -680,7 +665,7 @@
 
                     <div class="basis-1/2">
                         <div class="flex flex-col px-7 min-h-[782px] max-h-[782px] overflow-hidden bg-gradient-to-b from-[#00000033] to-transparent rounded-t-xl pt-8 ">
-                            <p class="text-left text-4xl font-semibold  text-white "> Top Referrals </p>
+                            <p class="lg:text-left text-center lg:text-4xl text-base font-semibold  text-white "> Top Referrals </p>
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-[22px] pt-8  overflow-hidden ">
                                 <!-- Referrals card -->
