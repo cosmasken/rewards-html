@@ -1,4 +1,4 @@
-# The Ministry of Foreign Affairs
+# Rewards Landing Page
 
 To get started:
 
@@ -6,9 +6,9 @@ To get started:
 
 
 bash
-git clone github.com/cosmasken/landing-template.git
+git clone github.com/cosmasken/rewards-html.git
 
-cd landing-template
+cd rewards-html
 
 2. Install the dependencies:
 
