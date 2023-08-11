@@ -944,27 +944,47 @@
                         </div>
                     </div>
                     <div class="z-20 ">
-                        <div class="absolute top-0 left-0 right-0 -z-10">
+                        <div class="absolute top-0 left-0 right-0 z-10">
                             <img alt="Linear Gradient" src="./assets/LandingPage/amb-top.png"/>
                         </div>
 
 
-                        <div class="font-semibold text-center md:text-[42px] text-base md:leading-[60px] text-white md:pt-[50px]">
+                        <div class="font-semibold z-20 md:pb-[30px] text-center md:text-[42px] text-base md:leading-[60px] text-white md:pt-[50px]">
                             Top 10 Campus Ambassador Performers
                         </div>
 
-                        <div class="bg-black/20 lg:w-[449px] flex flex-row mx-auto gap-20 items-center pl-2 md:pr-20 py-1 rounded-full ">
-                            <div class="bg-white flex flex-col w-[211px] shrink-0 h-8 items-center py-1 rounded-full">
-                                <div class="font-semibold text-base  text-[#003FE0] ">
+                        <div  x-data="{ activeTab: 'tab1' }" >
+                            <div class="flex bg-black/20 w-1/2 z-20 mx-auto justify-center rounded-full p-2">
+                                <button
+                                        @click="activeTab = 'tab1'"
+                                        :class="{ 'bg-white text-[#003FE0]': activeTab === 'tab1', 'text-white': activeTab !== 'tab1' }"
+                                        class="flex-1 text-center font-semibold text-base rounded-full py-3 focus:outline-none transition-colors duration-150"
+                                >
                                     Monthly
-                                </div>
-                            </div>
-                            <div class="font-semibold text-base text-white/70  shrink-0">
-                                Quarterly
+                                </button>
+                                <button
+                                        @click="activeTab = 'tab2'"
+                                        :class="{ 'bg-white text-[#003FE0]': activeTab === 'tab2', 'text-white': activeTab !== 'tab2' }"
+                                        class="flex-1 text-center rounded-full py-3 focus:outline-none transition-colors font-semibold text-base duration-150"
+                                >
+                                    Yearly
+                                </button>
                             </div>
                         </div>
+
+                        <!--                        <div class="bg-black/20 z-20 lg:w-[449px] flex flex-col md:flex-row mx-auto-->
+<!--                        md:gap-20 items-center pl-2 md:pr-20 py-1 rounded-full ">-->
+<!--                            <div class="bg-white flex flex-col md:w-[211px] shrink-0 h-8 items-center py-1 rounded-full">-->
+<!--                                <div class="font-semibold text-base  text-[#003FE0] ">-->
+<!--                                    Monthly-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="font-semibold text-base text-white/70  shrink-0">-->
+<!--                                Quarterly-->
+<!--                            </div>-->
+<!--                        </div>-->
                         <!-- List of top perfomers -->
-                        <div class="lg:pl-40 px-5 py-5 space-y-2 md:4 lg:pr-32 gl:pt-10 ">
+                        <div class="lg:pl-40 z-20 px-5 py-5 space-y-2 lg:pb-10 lg:pr-32 lg:pt-10 ">
                             <div class=" flex flex-col  lg:flex-row justify-between  gap-1  items-center pt-1 pl-6 pr-9  rounded-lg shadow-lg bg-black/20">
 
 
