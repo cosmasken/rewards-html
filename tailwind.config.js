@@ -23,10 +23,7 @@ module.exports = {
             // => @media (min-width: 1536px) { ... }
           },
         extend: {
-            backgroundImage: {
-                'hero-pattern': "url('./src/assets/LandingPage/hero-bg.svg')",
-              },
-        
+
             fontFamily: {
                 inter: ['Inter', 'sans-serif'],
                 saira: ['Saira', 'sans-serif'],
