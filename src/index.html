@@ -18,6 +18,8 @@
         <div class="lg:overflow-hidden">
 
             <div style="background-image: url('./assets/LandingPage/bg-new.svg');" class=" relative bg-cover w-full min-h-[450px]  md:min-h-[518px] lg:min-h-[1047px]">
+
+
                <div x-data="{  mobileMenuOpen: false }" >
                    <div class="relative bg-transparent lg:pl-40 lg:pr-20">
                        <div class="flex items-center justify-between px-4 md:py-6 mx-auto max-w-7xl md:px-6 md:justify-start md:space-x-10 lg:px-0">
@@ -114,23 +116,28 @@
                 </div>
             </div>
 
-            <div class="bg-white relative">
-                <div class="flex flex-col">
-                    <p class="md:text-2xl text-base text-[#333] mx-auto font-semibold">
+            <div class="bg-white relative" >
+                <div class="flex flex-col relative ">
+                    <div  class="hidden xl:block absolute z-10  top-0 left-0 right-0 min-h-[450px] lg:min-h-[1380px] xl:overflow-hidden ">
+                        <img alt="Linear Gradient"
+                             class="bg-cover" src="./assets/LandingPage/win-bg.svg">
+
+                    </div>
+                    <p class="md:text-2xl z-20 text-base text-[#333] mx-auto font-semibold">
                         How To win
                     </p>
-                    <div class="flex flex-row justify-center  items-center md:text-6xl text-lg text-[#333] mx-auto font-semibold lg:pb-[8px]">
+                    <div class="flex z-20 flex-row justify-center  items-center md:text-6xl text-lg text-[#333] mx-auto font-semibold lg:pb-[8px]">
                         Awesome Rewards?
                         <img alt="Trophy" class="md:h-[45px] h-6" src="./assets/LandingPage/trophy.svg"/>
                     </div>
-                    <p class="md:text-base mx-auto text-center text-[#666666] font-normal ">
+                    <p class="md:text-base z-20 mx-auto text-center text-[#666666] font-normal ">
                         The first way is by writing
                         a detailed and factual review of your institution. And the <br/> other is to Join for Campus
                         Ambassador
                         Program
                     </p>
 
-                    <div class="flex  flex-col md:flex-row ">
+                    <div class="flex z-20  flex-col md:flex-row ">
 
                         <div class="md:basis-1/2 items-center justify-center hidden md:block md:shrink-0">
                             <div class="z-10">
@@ -196,343 +203,354 @@
 
                 </div>
 
-                <div class="flex flex-col xl:pl-[145px]">
-                    <p class=" md:text-[42px] text-center md:text-left  text-[#000] font-semibold ">
-                        Join to Campus Ambassador<br> Program
-                    </p>
-                    <p class=" text-center lg:text-left  text-base text-[#666] font-normal px-5 md:px-0 pt-3 pb-1 md:pt-[22px] md:pb-[86px] "
-                    >
-                        Campus Ambassador Program has been initiated to recognize smart and dedicated college
-                        students and prov ide them with adequate opportunities to lear
-                        n the industry-relevant skills, while earning Cash rewards and certifications from our
-                        Industry-experts.
-                    </p>
-
-                    <div class="flex flex-col xl:pl-[125px] pl-5 pr-5 xl:pr-0">
-
-                        <p class="md:text-4xl text-center md:text-left text-lg font-semibold text-[#333] md:pb-14  ">
-                            Benefit to <br>
-                            Campus Ambassador
+                <div class="relative">
+                        <div class="bg-[#EEEEEE] relative   flex flex-col xl:pl-[145px]">
+                        <div class="hidden z-10 xl:block absolute -mt-[150px] top-0 right-0 xl:max-h-[595px]">
+                            <img alt="Ambassador Frame" src="./assets/LandingPage/ambassador-bg.png" class="xl:h-[595px] "/>
+                        </div>
+                        <p class="z-20 md:text-[42px] text-center md:text-left  text-[#000] font-semibold ">
+                            Join to Campus Ambassador<br> Program
+                        </p>
+                        <p class="z-20 text-center lg:text-left lg:w-1/2  text-base text-[#666] font-normal  px-5 md:px-0 pt-3 pb-1 md:pt-[22px] md:pb-[86px] "
+                        >
+                            Campus Ambassador Program has been initiated to recognize smart and dedicated college
+                            students and prov ide them with adequate opportunities to lear
+                            n the industry-relevant skills, while earning Cash rewards and certifications from our
+                            Industry-experts.
                         </p>
 
+                        <div class="flex z-20 flex-col xl:pl-[125px] pl-5 pr-5 xl:pr-0">
 
-                        <div class="flex w-full flex-col lg:flex-row gap-10 pb-10 justify-start  ">
-                            <div class="bg-white xl:w-[403px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Certificates of Internship/LOR"
-                                     class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-1.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
-                                    Certificates of Internship/LOR
-                                </div>
-                            </div>
-                            <div class="bg-white xl:w-[367px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Free Subscription Vouchers" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-2.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">Free
-                                    Subscription Vouchers
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex xl:w-[403px] flex-col lg:flex-row gap-10 pb-10  justify-start">
-                            <div class="bg-white flex flex-row gap-4 items-center shrink-0 px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Featuring on College.com" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-3.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
-                                    Featuring on College.com
-                                </div>
-                            </div>
-                            <div class="bg-white xl:w-[435px] flex flex-row gap-4  items-center shrink-0 px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Instant PayTM cash payments" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-4.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
-                                    Instant
-                                    PayTM cash payments
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex xl:w-[330px] flex-col lg:flex-row gap-10 pb-10 justify-start">
-                            <div class="bg-white flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Social Media Promotions" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-5.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">Social
-                                    Media Promotions
-                                </div>
-                            </div>
-                            <div class="bg-white xl:w-[570px] flex flex-row gap-4 shrink-0  items-center px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Internship opportunities at College.com HQ"
-                                     class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-6.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
-                                    Internship opportunities at College.com HQ
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex xl:w-[491px] flex-col lg:flex-row gap-10 pb-10  justify-start">
-                            <div class="bg-white flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Free Webinars and Counselling sessions"
-                                     class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-7.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">Free
-                                    Webinars and Counselling sessions
-                                </div>
-                            </div>
-                            <div class="bg-white xl:w-[455px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
-                                <img alt="Exclusive Collegedunia Merchandise"
-                                     class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
-                                     src="./assets/LandingPage/amb-8.svg"/>
-                                <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
-                                    Exclusive Collegedunia Merchandise
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <p class=" text-[#333] xl:text-4xl text-lg font-semibold xl:mb-11 pl-2 xl:pl-40 ">
-                        What Will You be Up to
-                    </p>
-
-                </div>
-
-                <div class="xl:pl-[155px] px-5 xl:pr-[153px]">
-
-                    <div class="flex flex-col xl:w-[1130px] w-full md:flex-row bg-white rounded-t-3xl px-6 pt-7 space-y-6 xl:space-x-6 shadow-lg">
-
-                        <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                            <img alt="Review Collation" class="min-h-0 min-w-0 w-20"
-                                 src="./assets/LandingPage/review-collation.svg"/>
-                            <p class="text-center">Review Collation</p>
-                            <p class="text-center ">Collate College reviews, on Collegedunia.com using your
-                                referral code
-                                and get paid for each approved Review.</p>
-                            <div class="absolute bottom-0 left-0">
-                                <img alt="Ellipse" src="./assets/LandingPage/ellipse-blue.svg">
-                            </div>
-                            <div class="absolute top-0 right-0">
-                                <img alt="Ellipse" src="./assets/LandingPage/ellipsebluetop.svg">
-                            </div>
-                        </div>
-                        <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                            <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/refer.svg"/>
-                            <p class="text-center">Refer your friends</p>
-                            <p class="text-center ">
-                                Refer your friends to join the program, and Gain paytm cash for every approved
-                                review that
-                                they get.
+                            <p class="md:text-4xl text-center md:text-left text-lg font-semibold text-[#333] md:pb-14  ">
+                                Benefit to <br>
+                                Campus Ambassador
                             </p>
-                            <div class="absolute bottom-0 left-0">
-                                <img src="./assets/LandingPage/ellipse-blue.svg">
+
+
+                            <div class="flex w-full flex-col lg:flex-row gap-10 pb-10 justify-start  ">
+                                <div class="bg-white xl:w-[403px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Certificates of Internship/LOR"
+                                         class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-1.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
+                                        Certificates of Internship/LOR
+                                    </div>
+                                </div>
+                                <div class="bg-white xl:w-[367px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Free Subscription Vouchers" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-2.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">Free
+                                        Subscription Vouchers
+                                    </div>
+                                </div>
                             </div>
-                            <div class="absolute top-0 right-0">
-                                <img src="./assets/LandingPage/ellipsebluetop.svg">
+
+                            <div class="flex xl:w-[403px] flex-col lg:flex-row gap-10 pb-10  justify-start">
+                                <div class="bg-white flex flex-row gap-4 items-center shrink-0 px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Featuring on College.com" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-3.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
+                                        Featuring on College.com
+                                    </div>
+                                </div>
+                                <div class="bg-white xl:w-[435px] flex flex-row gap-4  items-center shrink-0 px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Instant PayTM cash payments" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-4.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
+                                        Instant
+                                        PayTM cash payments
+                                    </div>
+                                </div>
                             </div>
+                            <div class="flex xl:w-[330px] flex-col lg:flex-row gap-10 pb-10 justify-start">
+                                <div class="bg-white flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Social Media Promotions" class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-5.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">Social
+                                        Media Promotions
+                                    </div>
+                                </div>
+                                <div class="bg-white xl:w-[570px] flex flex-row gap-4 shrink-0  items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Internship opportunities at College.com HQ"
+                                         class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-6.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
+                                        Internship opportunities at College.com HQ
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex xl:w-[491px] flex-col lg:flex-row gap-10 pb-10  justify-start">
+                                <div class="bg-white flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Free Webinars and Counselling sessions"
+                                         class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-7.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">Free
+                                        Webinars and Counselling sessions
+                                    </div>
+                                </div>
+                                <div class="bg-white xl:w-[455px] flex flex-row gap-4 shrink-0 items-center px-4 rounded-lg shadow-xl shadow-black-300">
+                                    <img alt="Exclusive Collegedunia Merchandise"
+                                         class="min-h-0 min-w-0 md:w-12 md:shrink-0 my-2"
+                                         src="./assets/LandingPage/amb-8.svg"/>
+                                    <div class="xl:whitespace-nowrap shrink-1 text-xl  xl:tracking-normal leading-7 ">
+                                        Exclusive Collegedunia Merchandise
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
 
-
-                        <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                            <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/represent.svg"/>
-                            <p class="text-center">Representation</p>
-                            <p class="text-center ">
-                                Represent us your campus and provide insights into your campus through Articles
-                                and Campus
-                                Tour Videos
-                            </p>
-                            <div class="absolute bottom-0 left-0">
-                                <img src="./assets/LandingPage/ellipse-blue.svg">
-                            </div>
-                            <div class="absolute top-0 right-0">
-                                <img src="./assets/LandingPage/ellipse-red.svg">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="grid xl:w-[1130px] w-full grid-cols-1 md:grid-cols-2 px-6 pb-7 gap-6 bg-white shadow-lg rounded-b-3xl ">
-
-                        <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                            <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/collaborate.svg"/>
-                            <p class="text-center">Collaborations</p>
-                            <p class="text-center ">Find, build and promote collaborations/ partnerships for
-                                Collegedunia
-                                with like- minded communities within your institution, promoting mutual learning
-                                and growth.</p>
-                            <div class="absolute bottom-0 left-0">
-                                <img src="./assets/LandingPage/ellipse-purple.svg">
-                            </div>
-                            <div class="absolute top-0 right-0">
-                                <img src="./assets/LandingPage/ellipse-purpletop.svg">
-                            </div>
-                        </div>
-
-
-                        <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
-                            <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/interview.svg"/>
-                            <p class="text-center">Guest Interviews</p>
-                            <p class="text-center ">
-                                Conduct insightful Student and Faculty
-                                interviews to provide information about your institution,
-                                and learn about their vision for the growth and welfare of the student.</p>
-                            <div class="absolute bottom-0 left-0">
-                                <img src="./assets/LandingPage/ellipse-purple.svg">
-                            </div>
-                            <div class="absolute top-0 right-0">
-                                <img src="./assets/LandingPage/ellipsebluetop.svg">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="xl:pl-[288px] md:pt-[65px] text-[#333] text-center md:text-left md:text-4xl text-base font-semibold pb-2 md:pb-11 pl-4">
-                    Milestones & Rewards
-                </div>
-
-                <div class=" xl:pl-[171px] px-5 xl:pr-[155px] grid  grid-cols-1  xl:grid-cols-5 space-y-2  xl:mb-5 ml-8 xl:space-x-6 ">
-
-                    <div class="self-end flex flex-col xl:h-[194px]">
-                        <div class="flex flex-row self-center xl:items-start">
-                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
-                            <div class="font-semibold text-2xl text-[#333]">
-                                5
-                            </div>
-                        </div>
-                        <div class="font-normal text-[#666] text-sm self-center xl:items-start">
-                            Approved Reviews
-                        </div>
-
-                        <div class=" flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
-                            <div class="font-normal text-sm text-[#666] ">
-                                Certificate of Participation (Beginner)
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="self-end flex flex-col xl:h-[266px]">
-                        <div class="flex flex-row self-center xl:items-start">
-                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
-                            <div class="font-semibold text-2xl text-[#333]">
-                                20
-                            </div>
-                        </div>
-                        <div class="font-normal text-[#666] text-sm self-center xl:items-start">
-                            Approved Reviews
-                        </div>
-
-                        <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
-                            <div class="font-normal text-sm text-[#666]">
-                                Certificate of Participation (Beginner)
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Exclusive Collegedunia merchandise
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="self-end flex flex-col xl:h-[299px]">
-                        <div class="flex flex-row self-center xl:items-start">
-                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
-                            <div class="font-semibold text-2xl text-[#333]">
-                                35
-                            </div>
-                        </div>
-                        <div class="font-normal text-[#666] text-sm self-center xl:items-start">
-                            Approved Reviews
-                        </div>
-
-                        <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
-                            <div class="font-normal text-sm text-[#666]">
-                                Internship Certificate (Master)
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Additional Paytm Cash Reward
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Social Media Promotions
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="self-end flex flex-col xl:h-[343px]">
-                        <div class="flex flex-row self-center xl:items-start">
-                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
-                            <div class="font-semibold text-2xl text-[#333]">
-                                50
-                            </div>
-                        </div>
-                        <div class="font-normal text-[#666] text-sm self-center xl:items-start">
-                            Approved Reviews
-                        </div>
-
-                        <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
-                            <div class="font-normal text-sm text-[#666]">
-                                Certificate of Recognition (Jedi) and LOR
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Paytm Cash Reward (upto INR 500)
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Feature on CD Website and Social Media
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="self-end flex flex-col xl:h-[374px]">
-                        <div class="flex flex-row self-center xl:items-start">
-                            <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
-                            <div class="font-semibold text-2xl text-[#333]">
-                                > 50
-                            </div>
-                        </div>
-                        <div class="font-normal text-[#666] text-sm self-center xl:items-start">
-                            Approved Reviews
-                        </div>
-
-                        <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
-                            <div class="font-normal text-sm text-[#666]">
-                                Paytm Cash Reward Per 25 Approved Reviews
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Featured Interview on CD Website and Social Media
-                            </div>
-                            <div class="font-normal text-sm text-[#666]">
-                                Linkedin Endorsements
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="flex xl:space-y-6 pl-5 pr-5 xl:pr-[155px] xl:pl-[288px]  flex-col pb-5">
-                    <div class=" text-[#333] text-base text-center md:text-left md:text-4xl font-semibold pb-1 xl:pb-3  ">
-                        How to Join
-                    </div>
-                    <div class="flex flex-row xl:space-x-[11px] space-x-2 items-center ">
-                        <img alt="Check Mark" height="28px" src="./assets/LandingPage/check.svg"/>
-                        <p class="text-[#333] xl:tracking-tighter xl:whitespace-nowrap text-base font-normal">
-                            Submit your review for your college using the Review Form. You will get your Referral code
-                            after submitting a review of your college
+                        <p class=" text-[#333] xl:text-4xl text-lg font-semibold xl:mb-11 pl-2 xl:pl-40 ">
+                            What Will You be Up to
                         </p>
-                    </div>
-                    <div class="flex xl:flex-row xl:space-x-[11px] space-x-2 items-center ">
-                        <img alt="Check Mark" class="md:h-7" src="./assets/LandingPage/check.svg"/>
-                        <p class="text-[#333] xl:tracking-tighter xl:whitespace-nowrap text-base font-normal">
-                            Refer your colleagues to join as a campus ambassador using this Referral form
-                        </p>
-                    </div>
-                    <button class="text-center bg-[#003fe0] md:w-[323px] text-base shrink-0 md:h-[48px] whitespace-nowrap py-3  font-semibold  leading-6 text-white rounded-full">
-                        See All Activity Guidline
-                    </button>
 
+                    </div>
+
+                    <div class="bg-[#EEEEEE] z-20  relative flex flex-col   xl:pl-[155px] px-5  lg:pr-[153px]">
+                        <div class="flex flex-col z-20 space-y-7 bg-white xl:w-[1130px] rounded-3xl shadow-lg">
+                            <div class="flex flex-col xl:w-[1130px] w-full md:flex-row bg-white rounded-t-3xl  px-6 pt-7 space-y-6 xl:space-x-6 ">
+
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img alt="Review Collation" class="min-h-0 min-w-0 xl:w-20"
+                                         src="./assets/LandingPage/review-collation.svg"/>
+                                    <p class="text-center">Review Collation</p>
+                                    <p class="text-center ">Collate College reviews, on Collegedunia.com using your
+                                        referral code
+                                        and get paid for each approved Review.</p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img alt="Ellipse" src="./assets/LandingPage/ellipse-blue.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img alt="Ellipse" src="./assets/LandingPage/ellipsebluetop.svg">
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/refer.svg"/>
+                                    <p class="text-center">Refer your friends</p>
+                                    <p class="text-center ">
+                                        Refer your friends to join the program, and Gain paytm cash for every approved
+                                        review that
+                                        they get.
+                                    </p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-blue.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipsebluetop.svg">
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/represent.svg"/>
+                                    <p class="text-center">Representation</p>
+                                    <p class="text-center ">
+                                        Represent us your campus and provide insights into your campus through Articles
+                                        and Campus
+                                        Tour Videos
+                                    </p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-blue.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipse-red.svg">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="grid xl:w-[1130px] w-full grid-cols-1 md:grid-cols-2 px-6 rounded-b-3xl pb-7 gap-6 bg-white   ">
+
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/collaborate.svg"/>
+                                    <p class="text-center">Collaborations</p>
+                                    <p class="text-center ">Find, build and promote collaborations/ partnerships for
+                                        Collegedunia
+                                        with like- minded communities within your institution, promoting mutual learning
+                                        and growth.</p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-purple.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipse-purpletop.svg">
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden bg-white relative flex flex-col w-full items-center px-6 rounded-2xl pt-4 pb-7">
+                                    <img class="min-h-0 min-w-0 w-20" src="./assets/LandingPage/interview.svg"/>
+                                    <p class="text-center">Guest Interviews</p>
+                                    <p class="text-center ">
+                                        Conduct insightful Student and Faculty
+                                        interviews to provide information about your institution,
+                                        and learn about their vision for the growth and welfare of the student.</p>
+                                    <div class="absolute bottom-0 left-0">
+                                        <img src="./assets/LandingPage/ellipse-purple.svg">
+                                    </div>
+                                    <div class="absolute top-0 right-0">
+                                        <img src="./assets/LandingPage/ellipsebluetop.svg">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div  class=" absolute z-10 xl:max-h-[241px]  bottom-0 left-0 right-0  overflow-hidden ">
+                            <img class="w-full xl:h-[241px]" alt="Linear Gradient" src="./assets/LandingPage/milestones-bg.png">
+
+                        </div>
+                    </div>
 
                 </div>
-                <div class="bg-gradient-to-tl from-[#19009E] from-[15%] via-[#701CDC] via-[71.55%] to-[#1C97DC] to-100%">
+
+                    <div class="relative">
+
+                        <div class="xl:pl-[288px] relative z-20 md:pt-[65px] text-[#333] text-center md:text-left md:text-4xl text-base font-semibold pb-2 md:pb-11 pl-4">
+                            Milestones & Rewards
+                        </div>
+
+                        <div class=" xl:pl-[171px] relative z-20 px-5 xl:pr-[155px] grid  grid-cols-1  xl:grid-cols-5 space-y-2  xl:mb-5 ml-8 xl:space-x-6 ">
+
+                            <div class="self-end flex flex-col xl:h-[194px]">
+                                <div class="flex flex-row self-center xl:items-start">
+                                    <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                                    <div class="font-semibold text-2xl text-[#333]">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="font-normal text-[#666] text-sm self-center xl:items-start">
+                                    Approved Reviews
+                                </div>
+
+                                <div class=" flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
+                                    <div class="font-normal text-sm text-[#666] ">
+                                        Certificate of Participation (Beginner)
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="self-end flex flex-col xl:h-[266px]">
+                                <div class="flex flex-row self-center xl:items-start">
+                                    <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                                    <div class="font-semibold text-2xl text-[#333]">
+                                        20
+                                    </div>
+                                </div>
+                                <div class="font-normal text-[#666] text-sm self-center xl:items-start">
+                                    Approved Reviews
+                                </div>
+
+                                <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Certificate of Participation (Beginner)
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Exclusive Collegedunia merchandise
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="self-end flex flex-col xl:h-[299px]">
+                                <div class="flex flex-row self-center xl:items-start">
+                                    <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                                    <div class="font-semibold text-2xl text-[#333]">
+                                        35
+                                    </div>
+                                </div>
+                                <div class="font-normal text-[#666] text-sm self-center xl:items-start">
+                                    Approved Reviews
+                                </div>
+
+                                <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Internship Certificate (Master)
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Additional Paytm Cash Reward
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Social Media Promotions
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="self-end flex flex-col xl:h-[343px]">
+                                <div class="flex flex-row self-center xl:items-start">
+                                    <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                                    <div class="font-semibold text-2xl text-[#333]">
+                                        50
+                                    </div>
+                                </div>
+                                <div class="font-normal text-[#666] text-sm self-center xl:items-start">
+                                    Approved Reviews
+                                </div>
+
+                                <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Certificate of Recognition (Jedi) and LOR
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Paytm Cash Reward (upto INR 500)
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Feature on CD Website and Social Media
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="self-end flex flex-col xl:h-[374px]">
+                                <div class="flex flex-row self-center xl:items-start">
+                                    <img alt="Star" height="24px" src="./assets/LandingPage/star.svg"/>
+                                    <div class="font-semibold text-2xl text-[#333]">
+                                        > 50
+                                    </div>
+                                </div>
+                                <div class="font-normal text-[#666] text-sm self-center xl:items-start">
+                                    Approved Reviews
+                                </div>
+
+                                <div class="flex flex-col items-center xl:items-start bg-gradient-to-b from-[#E7F0FF] from-[3.65%] via-[#F5F0FF] via-[57%] to-[#FFF] to-100% px-5 py-6 lg:space-y-7 rounded-md">
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Paytm Cash Reward Per 25 Approved Reviews
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Featured Interview on CD Website and Social Media
+                                    </div>
+                                    <div class="font-normal text-sm text-[#666]">
+                                        Linkedin Endorsements
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="flex xl:space-y-6 relative z-20 pl-5 pr-5 xl:pr-[155px] xl:pl-[288px]  flex-col pb-5">
+                            <div class=" text-[#333] text-base text-center md:text-left md:text-4xl font-semibold pb-1 xl:pb-3  ">
+                                How to Join
+                            </div>
+                            <div class="flex flex-row xl:space-x-[11px] space-x-2 items-center ">
+                                <img alt="Check Mark" height="28px" src="./assets/LandingPage/check.svg"/>
+                                <p class="text-[#333] xl:tracking-tighter xl:whitespace-nowrap text-base font-normal">
+                                    Submit your review for your college using the Review Form. You will get your Referral code
+                                    after submitting a review of your college
+                                </p>
+                            </div>
+                            <div class="flex xl:flex-row xl:space-x-[11px] space-x-2 items-center ">
+                                <img alt="Check Mark" class="md:h-7" src="./assets/LandingPage/check.svg"/>
+                                <p class="text-[#333] xl:tracking-tighter xl:whitespace-nowrap text-base font-normal">
+                                    Refer your colleagues to join as a campus ambassador using this Referral form
+                                </p>
+                            </div>
+                            <button class="text-center bg-[#003fe0] md:w-[323px] text-base shrink-0 md:h-[48px] whitespace-nowrap py-3  font-semibold  leading-6 text-white rounded-full">
+                                See All Activity Guidline
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                <div class="bg-gradient-to-tl relative from-[#19009E] from-[15%] via-[#701CDC] via-[71.55%] to-[#1C97DC] to-100%">
                     <div >
                         <div class="w-full md:h-[84px]">
                             <img alt="Join Bottom Background" class="md:h-[84px] w-full"

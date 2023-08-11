@@ -814,6 +814,12 @@ select{
 .w-2\/5{
   width: 40%;
 }
+.w-2\/3{
+  width: 66.666667%;
+}
+.w-1\/2{
+  width: 50%;
+}
 .min-w-0{
   min-width: 0px;
 }
@@ -1008,6 +1014,9 @@ select{
 .rounded-xl{
   border-radius: 0.75rem;
 }
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
 .rounded-b-2xl{
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -1111,6 +1120,10 @@ select{
 .bg-red-500{
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+.bg-\[\#EEEEEE\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
@@ -2050,11 +2063,17 @@ select{
   .lg\:min-h-\[1047px\]{
     min-height: 1047px;
   }
+  .lg\:min-h-\[1380px\]{
+    min-height: 1380px;
+  }
   .lg\:w-0{
     width: 0px;
   }
   .lg\:w-\[449px\]{
     width: 449px;
+  }
+  .lg\:w-1\/2{
+    width: 50%;
   }
   .lg\:flex-1{
     flex: 1 1 0%;
@@ -2143,6 +2162,9 @@ select{
   .lg\:pt-\[90px\]{
     padding-top: 90px;
   }
+  .lg\:pr-\[153px\]{
+    padding-right: 153px;
+  }
   .lg\:text-left{
     text-align: left;
   }
@@ -2195,6 +2217,12 @@ select{
   .xl\:h-\[409px\]{
     height: 409px;
   }
+  .xl\:h-\[732px\]{
+    height: 732px;
+  }
+  .xl\:h-\[1047px\]{
+    height: 1047px;
+  }
   .xl\:max-h-\[595px\]{
     max-height: 595px;
   }
@@ -2233,6 +2261,9 @@ select{
   }
   .xl\:w-\[441px\]{
     width: 441px;
+  }
+  .xl\:w-20{
+    width: 5rem;
   }
   .xl\:min-w-\[410px\]{
     min-width: 410px;
