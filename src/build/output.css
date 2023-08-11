@@ -790,6 +790,12 @@ select{
 .w-full{
   width: 100%;
 }
+.w-1{
+  width: 0.25rem;
+}
+.w-2\/5{
+  width: 40%;
+}
 .min-w-0{
   min-width: 0px;
 }
@@ -828,6 +834,9 @@ select{
 }
 .flex-col{
   flex-direction: column;
+}
+.items-start{
+  align-items: flex-start;
 }
 .items-center{
   align-items: center;
@@ -942,6 +951,11 @@ select{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.space-x-\[10px\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(10px * var(--tw-space-x-reverse));
+  margin-left: calc(10px * calc(1 - var(--tw-space-x-reverse)));
 }
 .self-start{
   align-self: flex-start;
@@ -1075,10 +1089,6 @@ select{
 }
 .bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
-}
-.bg-\[\#7906D2\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(121 6 210 / var(--tw-bg-opacity));
 }
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
@@ -1385,6 +1395,9 @@ select{
 .font-saira{
   font-family: Saira, sans-serif;
 }
+.font-\[\'Inter\'\]{
+  font-family: 'Inter';
+}
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1447,6 +1460,9 @@ select{
 }
 .leading-\[60px\]{
   line-height: 60px;
+}
+.leading-\[30px\]{
+  line-height: 30px;
 }
 .tracking-normal{
   letter-spacing: 0em;
@@ -1682,23 +1698,9 @@ select{
   .xs\:h-\[72px\]{
     height: 72px;
   }
-  .xs\:pb-5{
-    padding-bottom: 1.25rem;
-  }
-  .xs\:pt-5{
-    padding-top: 1.25rem;
-  }
   .xs\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-  .xs\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-  .xs\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
   .xs\:leading-6{
     line-height: 1.5rem;
@@ -1716,9 +1718,6 @@ select{
   }
   .sm\:hidden{
     display: none;
-  }
-  .sm\:h-\[72px\]{
-    height: 72px;
   }
   .sm\:w-\[449px\]{
     width: 449px;
@@ -1767,19 +1766,8 @@ select{
   .sm\:pr-32{
     padding-right: 8rem;
   }
-  .sm\:pt-5{
-    padding-top: 1.25rem;
-  }
   .sm\:text-left{
     text-align: left;
-  }
-  .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .sm\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
   .sm\:text-sm{
     font-size: 0.875rem;
@@ -1823,9 +1811,6 @@ select{
   .md\:h-\[64px\]{
     height: 64px;
   }
-  .md\:h-\[72px\]{
-    height: 72px;
-  }
   .md\:h-\[84px\]{
     height: 84px;
   }
@@ -1838,17 +1823,14 @@ select{
   .md\:max-h-\[782px\]{
     max-height: 782px;
   }
-  .md\:min-h-\[1047px\]{
-    min-height: 1047px;
-  }
   .md\:min-h-\[118px\]{
     min-height: 118px;
   }
-  .md\:min-h-\[782px\]{
-    min-height: 782px;
-  }
   .md\:min-h-\[518px\]{
     min-height: 518px;
+  }
+  .md\:min-h-\[782px\]{
+    min-height: 782px;
   }
   .md\:w-12{
     width: 3rem;
@@ -1966,6 +1948,9 @@ select{
   .md\:pr-\[271px\]{
     padding-right: 271px;
   }
+  .md\:pt-5{
+    padding-top: 1.25rem;
+  }
   .md\:pt-\[22px\]{
     padding-top: 22px;
   }
@@ -1987,9 +1972,6 @@ select{
   .md\:pt-\[95px\]{
     padding-top: 95px;
   }
-  .md\:pt-5{
-    padding-top: 1.25rem;
-  }
   .md\:text-left{
     text-align: left;
   }
@@ -2000,6 +1982,10 @@ select{
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
   .md\:text-6xl{
     font-size: 3.75rem;
@@ -2016,10 +2002,6 @@ select{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
   .md\:leading-\[60px\]{
     line-height: 60px;
   }
@@ -2034,20 +2016,11 @@ select{
   .lg\:hidden{
     display: none;
   }
-  .lg\:h-\[595px\]{
-    height: 595px;
-  }
-  .lg\:max-h-\[595px\]{
-    max-height: 595px;
-  }
   .lg\:min-h-\[1047px\]{
     min-height: 1047px;
   }
   .lg\:w-0{
     width: 0px;
-  }
-  .lg\:w-3\/5{
-    width: 60%;
   }
   .lg\:w-\[449px\]{
     width: 449px;
@@ -2076,6 +2049,21 @@ select{
     margin-top: calc(23px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(23px * var(--tw-space-y-reverse));
   }
+  .lg\:space-y-\[52px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(52px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(52px * var(--tw-space-y-reverse));
+  }
+  .lg\:space-x-\[81px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(81px * var(--tw-space-x-reverse));
+    margin-left: calc(81px * calc(1 - var(--tw-space-x-reverse)));
+  }
+  .lg\:space-y-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
   .lg\:overflow-hidden{
     overflow: hidden;
   }
@@ -2093,6 +2081,9 @@ select{
   .lg\:px-\[155px\]{
     padding-left: 155px;
     padding-right: 155px;
+  }
+  .lg\:pb-4{
+    padding-bottom: 1rem;
   }
   .lg\:pb-9{
     padding-bottom: 2.25rem;
@@ -2132,6 +2123,9 @@ select{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+  .lg\:leading-6{
+    line-height: 1.5rem;
+  }
 }
 @media (min-width: 1280px){
   .xl\:mb-11{
@@ -2164,6 +2158,9 @@ select{
   .xl\:max-h-\[595px\]{
     max-height: 595px;
   }
+  .xl\:w-3\/5{
+    width: 60%;
+  }
   .xl\:w-\[1130px\]{
     width: 1130px;
   }
@@ -2188,8 +2185,14 @@ select{
   .xl\:w-\[570px\]{
     width: 570px;
   }
-  .xl\:w-3\/5{
-    width: 60%;
+  .xl\:w-\[410px\]{
+    width: 410px;
+  }
+  .xl\:min-w-\[410px\]{
+    min-width: 410px;
+  }
+  .xl\:max-w-\[410px\]{
+    max-width: 410px;
   }
   .xl\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -2199,6 +2202,9 @@ select{
   }
   .xl\:items-start{
     align-items: flex-start;
+  }
+  .xl\:justify-end{
+    justify-content: flex-end;
   }
   .xl\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
@@ -2220,12 +2226,21 @@ select{
     margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
   }
+  .xl\:space-y-\[52px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(52px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(52px * var(--tw-space-y-reverse));
+  }
   .xl\:whitespace-nowrap{
     white-space: nowrap;
   }
   .xl\:px-\[155px\]{
     padding-left: 155px;
     padding-right: 155px;
+  }
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .xl\:pb-3{
     padding-bottom: 0.75rem;
@@ -2256,6 +2271,18 @@ select{
   }
   .xl\:pr-\[155px\]{
     padding-right: 155px;
+  }
+  .xl\:pl-\[55px\]{
+    padding-left: 55px;
+  }
+  .xl\:pr-\[55px\]{
+    padding-right: 55px;
+  }
+  .xl\:pr-\[70px\]{
+    padding-right: 70px;
+  }
+  .xl\:pb-0{
+    padding-bottom: 0px;
   }
   .xl\:text-4xl{
     font-size: 2.25rem;

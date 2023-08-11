@@ -7,7 +7,8 @@
         "serve": "cross-env NODE_ENV=development concurrently \"postcss src/input.css -o src/build/output.css --watch\"  \"live-server ./src\"",
         "development": "cross-env NODE_ENV=development postcss src/input.css -o src/build/output.css",
         "production": "cross-env NODE_ENV=production postcss src/input.css -o src/build/output.css",
-        "start": "npm run serve"
+        "start": "npm run serve",
+        "build": "react-scripts build && cp build/index.html build/200.html"
     },
     "repository": {
         "type": "git",
