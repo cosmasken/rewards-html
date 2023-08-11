@@ -1,7 +1,7 @@
 {
-    "name": "ministry-foreign-affairs-landing-template",
+    "name": "rewards-landing-template",
     "version": "1.0.0",
-    "description": "Ministry of Foreign Affairs Landing Template",
+    "description": "Rewards  Landing Template",
     "main": "index.js",
     "scripts": {
         "serve": "cross-env NODE_ENV=development concurrently \"postcss src/input.css -o src/build/output.css --watch\"  \"live-server ./src\"",
@@ -11,15 +11,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://cosmasaruba@bitbucket.org/bitfactor/ministry-foreign-affairs-landing-template.git"
+        "url": "git+https://cosmasaruba@bitbucket.org/bitfactor/rewards-landing-template.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://cosmasaruba@bitbucket.org/bitfactor/ministry-foreign-affairs-landing-templateg/issues"
+        "url": "https://cosmasaruba@bitbucket.org/bitfactor/rewards-landing-templateg/issues"
     },
-    "homepage": "https://cosmasaruba@bitbucket.org/bitfactor/ministry-foreign-affairs-landing-template#readme",
+    "homepage": "https://cosmasaruba@bitbucket.org/bitfactor/rewards-landing-template#readme",
     "dependencies": {
         "@tailwindcss/line-clamp": "^0.4.0",
         "concurrently": "^7.1.0",

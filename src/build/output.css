@@ -1076,6 +1076,10 @@ select{
 .bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
 }
+.bg-\[\#7906D2\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(121 6 210 / var(--tw-bg-opacity));
+}
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
 }
@@ -1674,6 +1678,32 @@ select{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
 }
+@media (min-width: 320px){
+  .xs\:h-\[72px\]{
+    height: 72px;
+  }
+  .xs\:pb-5{
+    padding-bottom: 1.25rem;
+  }
+  .xs\:pt-5{
+    padding-top: 1.25rem;
+  }
+  .xs\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .xs\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .xs\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .xs\:leading-6{
+    line-height: 1.5rem;
+  }
+}
 @media (min-width: 640px){
   .sm\:ml-6{
     margin-left: 1.5rem;
@@ -1686,6 +1716,9 @@ select{
   }
   .sm\:hidden{
     display: none;
+  }
+  .sm\:h-\[72px\]{
+    height: 72px;
   }
   .sm\:w-\[449px\]{
     width: 449px;
@@ -1814,11 +1847,11 @@ select{
   .md\:min-h-\[782px\]{
     min-height: 782px;
   }
+  .md\:min-h-\[518px\]{
+    min-height: 518px;
+  }
   .md\:w-12{
     width: 3rem;
-  }
-  .md\:w-3\/5{
-    width: 60%;
   }
   .md\:w-\[323px\]{
     width: 323px;
@@ -1954,6 +1987,9 @@ select{
   .md\:pt-\[95px\]{
     padding-top: 95px;
   }
+  .md\:pt-5{
+    padding-top: 1.25rem;
+  }
   .md\:text-left{
     text-align: left;
   }
@@ -1980,6 +2016,10 @@ select{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
   .md\:leading-\[60px\]{
     line-height: 60px;
   }
@@ -2000,14 +2040,17 @@ select{
   .lg\:max-h-\[595px\]{
     max-height: 595px;
   }
+  .lg\:min-h-\[1047px\]{
+    min-height: 1047px;
+  }
   .lg\:w-0{
     width: 0px;
   }
-  .lg\:w-\[449px\]{
-    width: 449px;
-  }
   .lg\:w-3\/5{
     width: 60%;
+  }
+  .lg\:w-\[449px\]{
+    width: 449px;
   }
   .lg\:flex-1{
     flex: 1 1 0%;
@@ -2066,14 +2109,14 @@ select{
   .lg\:pl-40{
     padding-left: 10rem;
   }
+  .lg\:pr-20{
+    padding-right: 5rem;
+  }
   .lg\:pr-32{
     padding-right: 8rem;
   }
   .lg\:pt-\[42px\]{
     padding-top: 42px;
-  }
-  .lg\:pr-20{
-    padding-right: 5rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -2097,6 +2140,9 @@ select{
   .xl\:mb-5{
     margin-bottom: 1.25rem;
   }
+  .xl\:block{
+    display: block;
+  }
   .xl\:h-\[194px\]{
     height: 194px;
   }
@@ -2111,6 +2157,12 @@ select{
   }
   .xl\:h-\[374px\]{
     height: 374px;
+  }
+  .xl\:h-\[595px\]{
+    height: 595px;
+  }
+  .xl\:max-h-\[595px\]{
+    max-height: 595px;
   }
   .xl\:w-\[1130px\]{
     width: 1130px;
@@ -2135,6 +2187,9 @@ select{
   }
   .xl\:w-\[570px\]{
     width: 570px;
+  }
+  .xl\:w-3\/5{
+    width: 60%;
   }
   .xl\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
