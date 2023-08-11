@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8"/>
@@ -17,7 +17,8 @@
  <main class="flex-1">
         <div class="lg:overflow-hidden">
 
-            <div style="background-image: url('./assets/LandingPage/bg-new.svg');" class=" relative bg-cover w-full min-h-[450px]  md:min-h-[518px] lg:min-h-[1047px]">
+            <div style="background-image: url('./assets/LandingPage/bg-new.svg');"
+                 class=" relative bg-cover w-full min-h-[450px]  md:min-h-[518px] lg:min-h-[1047px]">
 
 
                <div x-data="{  mobileMenuOpen: false }" >
@@ -61,10 +62,10 @@
                                    </div>
                                    <div class="px-5 pb-6">
                                        <div class="flex flex-col  gap-4">
-                                           <a href="/" class="text-base font-bold text-white">Rewards</a>
-                                           <a href="/" class="text-base font-bold text-white">Join US</a>
-                                           <a href="/" class="text-base font-bold text-white">Leaderboard</a>
-                                           <a href="/" class="text-base font-bold text-white">Rules</a>
+                                           <a href="#rewards" class="text-base font-bold text-white">Rewards</a>
+                                           <a href="#joinus" class="text-base font-bold text-white">Join US</a>
+                                           <a href="#leaderboard" class="text-base font-bold text-white">Leaderboard</a>
+                                           <a href="#rules" class="text-base font-bold text-white">Rules</a>
                                        </div>
 
                                    </div>
@@ -73,13 +74,13 @@
                            </div>
 
                            <nav class="justify-end hidden lg:flex space-x-14">
-                               <a aria-current="page" href="/" class="router-link-active router-link-exact-active ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">
+                               <a aria-current="page" href="#rewards" class=" ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">
                                    Rewards
                                </a>
-                               <a href="/product.html" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Join Us</a>
+                               <a href="#joinus" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1 opacity-20">Join Us</a>
 
-                               <a href="/company.html" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Leaderboard</a>
-                               <a href="/login.html" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Rules
+                               <a href="#leaderboard" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Leaderboard</a>
+                               <a href="#rules" class="ease-in-out duration-200 text-base font-bold text-white hover:-translate-y-1">Rules
                                </a>
 
 
@@ -116,8 +117,8 @@
                 </div>
             </div>
 
-            <div class="bg-white relative" >
-                <div class="flex flex-col relative ">
+            <div  class="bg-white relative" >
+                <div  class="flex flex-col relative ">
                     <div  class="hidden xl:block absolute z-10  top-0 left-0 right-0 min-h-[450px] lg:min-h-[1380px] xl:overflow-hidden ">
                         <img alt="Linear Gradient"
                              class="bg-cover" src="./assets/LandingPage/win-bg.svg">
@@ -204,6 +205,7 @@
                 </div>
 
                 <div class="relative">
+
                         <div class="bg-[#EEEEEE] relative   flex flex-col xl:pl-[145px]">
                         <div class="hidden z-10 xl:block absolute -mt-[150px] top-0 right-0 xl:max-h-[595px]">
                             <img alt="Ambassador Frame" src="./assets/LandingPage/ambassador-bg.png" class="xl:h-[595px] "/>
@@ -400,7 +402,7 @@
 
                 </div>
 
-                    <div class="relative">
+                    <div id="rewards" class="relative">
 
                         <div class="xl:pl-[288px] relative z-20 md:pt-[65px] text-[#333] text-center md:text-left md:text-4xl text-base font-semibold pb-2 md:pb-11 pl-4">
                             Milestones & Rewards
@@ -525,7 +527,7 @@
                             </div>
                         </div>
 
-                        <div class="flex xl:space-y-6 relative z-20 pl-5 pr-5 xl:pr-[155px] xl:pl-[288px]  flex-col pb-5">
+                        <div id="joinus" class="flex xl:space-y-6 relative z-20 pl-5 pr-5 xl:pr-[155px] xl:pl-[288px]  flex-col pb-5">
                             <div class=" text-[#333] text-base text-center md:text-left md:text-4xl font-semibold pb-1 xl:pb-3  ">
                                 How to Join
                             </div>
@@ -556,7 +558,7 @@
                             <img alt="Join Bottom Background" class="md:h-[84px] w-full"
                                  src="./assets/LandingPage/join-bg.png"/>
                         </div>
-                        <div class="xl:px-[155px] px-5">
+                        <div id="leaderboard" class="xl:px-[155px] px-5">
 
                             <div class="font-semibold text-center md:text-[42px] text-lg md:leading-[60px] text-white pt-2 md:pt-[50px]">
                                 Weekly Top Leaderboard
@@ -1193,7 +1195,7 @@
                         </div>
 
                     </div>
-                    <div class="w-full bg-white xl:bg-transparent  flex flex-col items-center">
+                    <div id="rules" class="w-full bg-white xl:bg-transparent  flex flex-col items-center">
 
                         <div class="font-semibold z-20  text-center lg:pt-[90px] xl:text-[42px] text-lg md:text-4xl xl:leading-[60px] text-black">
                             Rules and Guidelines
