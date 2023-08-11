@@ -24,8 +24,7 @@ module.exports = {
           },
         extend: {
             backgroundImage: {
-                'hero-pattern': "url('./assets/LandingPage/landing-bg-1.png')",
-                'footer-texture': "url('/img/footer-texture.png')",
+                'hero-pattern': "url('./src/assets/LandingPage/hero-bg.svg')",
               },
         
             fontFamily: {
