@@ -32,8 +32,8 @@ module.exports = {
                 'backdrop': '#F5F6FA', // for page background color
                 'primary': { // primary theme color
                     DEFAULT: '#092443',
-                    '50': '#EEF5FC',
-                    '100': '#2470C2',
+                    '50': '#666666',
+                    '100': '#333333',
                     '200': '#0C192D',
                     '300': '#062D10',
                     '400': '#475467',
